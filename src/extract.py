@@ -1,8 +1,15 @@
+
+
+
 import requests
 import pandas as pd
 
-# Coloque seu token aqui
-API_KEY = "4b7bb6858259406e96d72ed682d423cf"
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+API_KEY = os.getenv("API_KEY")
 
 url = "https://api.football-data.org/v4/competitions"
 

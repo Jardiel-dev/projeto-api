@@ -2,7 +2,15 @@
 
 ## Objetivo
 
-Projeto desenvolvido para aprender Git, GitHub e consumo de APIs utilizando Python.
+Projeto para estudo de Git, GitHub e consumo de APIs utilizando Python.
+
+## Tecnologias
+
+- Python
+- Requests
+- Pandas
+- Git
+- GitHub
 
 ## Estrutura
 
@@ -22,22 +30,37 @@ projeto-api/
 │   ├── dashboard.py
 │   └── main.py
 │
-├── requirements.txt
+├── .env
+├── .gitignore
 ├── README.md
-└── .gitignore
+└── requirements.txt
 ```
 
-## Tecnologias
+## Como executar
 
-- Python
-- Pandas
-- Requests
-- Git
-- GitHub
+1. Criar o ambiente virtual.
+2. Instalar as dependências:
 
-## Etapas do projeto
+```bash
+pip install -r requirements.txt
+```
 
-- ✅ Extração da API
-- ⏳ Banco de Dados
-- ⏳ Dashboard
-- ⏳ Análise
+3. Criar um arquivo `.env`:
+
+```env
+API_KEY=SEU_TOKEN
+```
+
+4. Executar:
+
+```bash
+python src/extract.py
+```
+
+## Resultado
+
+O programa consulta a API Football Data e salva um arquivo CSV em:
+
+```
+data/raw/competicoes.csv
+```
