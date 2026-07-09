@@ -15,30 +15,33 @@ headers = {
 }
 
 
-def conectar_api(url):
+def extrair_dados(url, chave, arquivo):
     print("Conectando à API...")
 
     response = requests.get(url, headers=headers)
 
     if response.status_code == 200:
         print("Conexão realizada com sucesso!")
-        return response.json()
+
+        dados = response.json()
+
+        tabela = pd.DataFrame(dados[chave])
+
+        print(tabela.head())
+
+        tabela.to_csv(f"data/raw/{arquivo}.csv", index=False)
+
+        print(f"\nArquivo salvo em data/raw/{arquivo}.csv")
+
+        return tabela
 
     print(f"Erro: {response.status_code}")
     print(response.text)
     return None
 
 
-dados = conectar_api(url)
-
-if dados:
-
-    artilheiros = dados["scorers"]
-
-    tabela = pd.DataFrame(artilheiros)
-
-    print(tabela.head())
-
-    tabela.to_csv("data/raw/artilheiros.csv", index=False)
-
-    print("\nArquivo salvo em data/raw/artilheiros.csv")
+extrair_dados(
+    url,
+    "scorers",
+    "artilheiros"
+)
