@@ -1,18 +1,15 @@
-
-
-
 import requests
 import pandas as pd
 
 from dotenv import load_dotenv
 import os
+import json
 
 load_dotenv()
 
 API_KEY = os.getenv("API_KEY")
 
-url = "https://api.football-data.org/v4/competitions"
-
+url = "https://api.football-data.org/v4/competitions/2013/scorers"
 headers = {
     "X-Auth-Token": API_KEY
 }
@@ -26,15 +23,19 @@ if response.status_code == 200:
 
     dados = response.json()
 
-    competicoes = dados["competitions"]
+    artilheiros = dados["scorers"]
 
-    tabela = pd.DataFrame(competicoes)
+    tabela = pd.DataFrame(artilheiros)
 
     print(tabela.head())
 
-    tabela.to_csv("data/raw/competicoes.csv", index=False)
+    tabela.to_csv("data/raw/artilheiros.csv", index=False)
 
-    print("\nArquivo salvo em data/raw/competicoes.csv")
+    print("\nArquivo salvo em data/raw/artilheiros.csv")
+
+    tabela.to_csv("data/raw/partidas.csv", index=False)
+
+    print("\nArquivo salvo em data/raw/partidas.csv")
 
 else:
     print(f"Erro: {response.status_code}")

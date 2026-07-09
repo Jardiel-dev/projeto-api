@@ -4,13 +4,20 @@
 
 Projeto para estudo de Git, GitHub e consumo de APIs utilizando Python.
 
+O objetivo é extrair dados do Campeonato Brasileiro Série A utilizando a Football Data API e construir a primeira camada do pipeline de dados (Bronze).
+
+---
+
 ## Tecnologias
 
 - Python
 - Requests
 - Pandas
+- python-dotenv
 - Git
 - GitHub
+
+---
 
 ## Estrutura
 
@@ -19,6 +26,11 @@ projeto-api/
 │
 ├── data/
 │   ├── raw/
+│   │   ├── competicoes.csv
+│   │   ├── temporadas.csv
+│   │   ├── times.csv
+│   │   ├── partidas.csv
+│   │   └── artilheiros.csv
 │   └── processed/
 │
 ├── docs/
@@ -36,31 +48,51 @@ projeto-api/
 └── requirements.txt
 ```
 
+---
+
+## Dados extraídos
+
+Competição utilizada:
+
+- Campeonato Brasileiro Série A (ID 2013)
+
+Arquivos gerados na camada Bronze:
+
+- competicoes.csv
+- temporadas.csv
+- times.csv
+- partidas.csv
+- artilheiros.csv
+
+---
+
 ## Como executar
 
-1. Criar o ambiente virtual.
-2. Instalar as dependências:
+1. Criar o ambiente virtual
+
+2. Instalar as dependências
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Criar um arquivo `.env`:
+3. Criar o arquivo `.env`
 
 ```env
 API_KEY=SEU_TOKEN
 ```
 
-4. Executar:
+4. Executar
 
 ```bash
 python src/extract.py
 ```
 
-## Resultado
+---
 
-O programa consulta a API Football Data e salva um arquivo CSV em:
+## Próximos passos
 
-```
-data/raw/competicoes.csv
-```
+- Tratamento dos dados (Camada Silver)
+- Modelagem do banco de dados
+- Carga no banco
+- Dashboard
