@@ -20,7 +20,7 @@ colunas_complexas = ['area', 'competition', 'season', 'homeTeam', 'awayTeam', 'r
 for col in colunas_complexas:
     df[col] = df[col].apply(parse_json)
 
-# --- TRATAMENTO COMPLETO (Todas as 16 colunas da planilha) ---
+# --- TRATAMENTO COMPLETO ---
 
 # IDs Principais
 df['id_area'] = df['area'].apply(lambda x: x.get('id') if isinstance(x, dict) else None)
@@ -41,12 +41,32 @@ df['id_arbitro'] = df['referees'].apply(get_arbitro_id)
 
 # Detalhes da Partida
 df['data_partida'] = df['utcDate']
-df['status'] = df['status']
 df['rodada'] = df['matchday']
 
-# Placa e Resultados (Vêm de 'score')
-df['resultado'] = df['score'].apply(lambda x: x.get('winner') if isinstance(x, dict) else None)
+# --- TRADUÇÕES PARA PORTUGUÊS ---
 
+# 1. Tradução do Status
+mapeamento_status = {
+    'FINISHED': 'FINALIZADO',
+    'IN_PLAY': 'EM_ANDAMENTO',
+    'PAUSED': 'INTERVALO',
+    'SCHEDULED': 'AGENDADO',
+    'POSTPONED': 'ADIADO',
+    'CANCELLED': 'CANCELADO'
+}
+df['status'] = df['status'].map(mapeamento_status).fillna(df['status'])
+
+# 2. Tradução do Resultado
+mapeamento_resultado = {
+    'HOME_TEAM': 'MANDANTE',
+    'AWAY_TEAM': 'VISITANTE',
+    'DRAW': 'EMPATE'
+}
+
+df['resultado'] = df['score'].apply(lambda x: x.get('winner') if isinstance(x, dict) else None)
+df['resultado'] = df['resultado'].map(mapeamento_resultado).fillna(df['resultado'])
+
+# Placares
 df['placar_casa_intervalo'] = df['score'].apply(
     lambda x: x.get('halfTime', {}).get('home') if isinstance(x, dict) and isinstance(x.get('halfTime'), dict) else None
 )
@@ -61,7 +81,7 @@ df['placar_fora_final'] = df['score'].apply(
     lambda x: x.get('fullTime', {}).get('away') if isinstance(x, dict) and isinstance(x.get('fullTime'), dict) else None
 )
 
-# Seleciona exatamente as colunas na ordem da planilha do Marcos
+# Seleciona exatamente as colunas na ordem da planilha
 colunas_finais = [
     'id_area', 'id_competicao', 'id_temporada', 'id_partida',
     'id_casa', 'id_fora', 'id_arbitro', 'data_partida', 'status', 
@@ -75,5 +95,5 @@ df_final = df[colunas_finais]
 caminho_excel = 'data/processed/tabela_partidas_tratada.xlsx'
 df_final.to_excel(caminho_excel, index=False)
 
-print("✅ Processamento concluído com sucesso!")
-print(f"📄 Arquivo Excel gerado em: {caminho_excel}")
+print("✅ Tabela traduzida e processada com sucesso!")
+print(f"📄 Arquivo atualizado em: {caminho_excel}")
