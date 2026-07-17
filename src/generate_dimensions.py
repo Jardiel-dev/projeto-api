@@ -147,10 +147,39 @@ def generate_artilheiros():
     print("✅ artilheiros.xlsx gerado com sucesso!")
 
 
+def generate_arbitros():
+    print("⏳ Processando: arbitros.xlsx...")
+    df = pd.read_csv(os.path.join(RAW_DIR, 'partidas.csv'))
+    
+    arbitros_list = []
+    
+    for _, row in df.iterrows():
+        referees = safe_eval(row['referees'])
+        if isinstance(referees, list):
+            for ref in referees:
+                if isinstance(ref, dict) and ref.get('id'):
+                    arbitros_list.append({
+                        'id_arbitro': ref.get('id'),
+                        'nome_arbitro': ref.get('name'),
+                        'tipo_arbitro': ref.get('type'),
+                        'nacionalidade': ref.get('nationality')
+                    })
+                    
+    df_arbitros = pd.DataFrame(arbitros_list)
+    
+    # Remove duplicatas mantendo apenas registros únicos de árbitros
+    if not df_arbitros.empty:
+        df_arbitros = df_arbitros.drop_duplicates(subset=['id_arbitro'])
+    
+    df_arbitros.to_excel(os.path.join(PROCESSED_DIR, 'arbitros.xlsx'), index=False)
+    print("✅ arbitros.xlsx gerado com sucesso!")
+
+
 if __name__ == '__main__':
     print("🚀 Iniciando geração das tabelas relacionais em Excel...\n")
     generate_temporadas()
     generate_competicoes()
     generate_times_tecnicos_jogadores()
     generate_artilheiros()
-    print("\n🎉 Todas as 6 tabelas foram geradas com sucesso na pasta 'data/processed/'!")
+    generate_arbitros()
+    print("\n🎉 Todas as 7 tabelas foram geradas com sucesso na pasta 'data/processed/'!")
