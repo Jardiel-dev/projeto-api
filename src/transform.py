@@ -15,12 +15,16 @@ def parse_json(val):
             return {}
     return val
 
-# Converte colunas com dicionários
+# Converte colunas com dicionários/listas
 colunas_complexas = ['area', 'competition', 'season', 'homeTeam', 'awayTeam', 'referees', 'score']
 for col in colunas_complexas:
     df[col] = df[col].apply(parse_json)
 
-# --- TRATAMENTO COMPLETO ---
+# --- AJUSTE 4: Filtrar apenas partidas FINALIZADAS ---
+df = df[df['status'] == 'FINISHED'].copy()
+
+# --- AJUSTE 2 & FIX: Converter data_partida para datetime e remover fuso horário (compatível com Excel) ---
+df['data_partida'] = pd.to_datetime(df['utcDate'], errors='coerce').dt.tz_localize(None)
 
 # IDs Principais
 df['id_area'] = df['area'].apply(lambda x: x.get('id') if isinstance(x, dict) else None)
@@ -28,33 +32,30 @@ df['id_competicao'] = df['competition'].apply(lambda x: x.get('id') if isinstanc
 df['id_temporada'] = df['season'].apply(lambda x: x.get('id') if isinstance(x, dict) else None)
 df['id_partida'] = df['id']
 
-# Times e Árbitro
+# Times
 df['id_casa'] = df['homeTeam'].apply(lambda x: x.get('id') if isinstance(x, dict) else None)
 df['id_fora'] = df['awayTeam'].apply(lambda x: x.get('id') if isinstance(x, dict) else None)
 
+# --- AJUSTE 1 & 3: Buscar árbitro dinamicamente por type == 'REFEREE' ---
 def get_arbitro_id(referees_list):
-    if isinstance(referees_list, list) and len(referees_list) > 0:
-        return referees_list[0].get('id')
+    if isinstance(referees_list, list):
+        for ref in referees_list:
+            if isinstance(ref, dict) and ref.get('type') == 'REFEREE':
+                return ref.get('id')
     return None
 
 df['id_arbitro'] = df['referees'].apply(get_arbitro_id)
 
 # Detalhes da Partida
-df['data_partida'] = df['utcDate']
 df['rodada'] = df['matchday']
 
 # --- TRADUÇÕES PARA PORTUGUÊS ---
 
-# 1. Tradução do Status
+# 1. Status (Como filtramos FINISHED, todos serão FINALIZADO)
 mapeamento_status = {
-    'FINISHED': 'FINALIZADO',
-    'IN_PLAY': 'EM_ANDAMENTO',
-    'PAUSED': 'INTERVALO',
-    'SCHEDULED': 'AGENDADO',
-    'POSTPONED': 'ADIADO',
-    'CANCELLED': 'CANCELADO'
+    'FINISHED': 'FINALIZADO'
 }
-df['status'] = df['status'].map(mapeamento_status).fillna(df['status'])
+df['status'] = df['status'].map(mapeamento_status).fillna('FINALIZADO')
 
 # 2. Tradução do Resultado
 mapeamento_resultado = {
@@ -95,5 +96,5 @@ df_final = df[colunas_finais]
 caminho_excel = 'data/processed/tabela_partidas_tratada.xlsx'
 df_final.to_excel(caminho_excel, index=False)
 
-print("✅ Tabela traduzida e processada com sucesso!")
-print(f"📄 Arquivo atualizado em: {caminho_excel}")
+print("✅ Todos os ajustes do Marcos foram salvos com sucesso!")
+print(f"📄 Total de partidas finalizadas processadas: {len(df_final)}")
