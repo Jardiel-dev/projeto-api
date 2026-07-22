@@ -1,20 +1,20 @@
-
-```markdown
-# ⚽ Projeto API - Football Data Pipeline
+# ⚽ Projeto API - Football Data Pipeline & Analytics
 
 ## 📌 Objetivo
 
-Projeto desenvolvido para estudo prático de **Engenharia e Análise de Dados** utilizando Python, Git, GitHub e consumo de APIs REST.
+Projeto desenvolvido para estudo prático de **Engenharia e Análise de Dados** utilizando Python, Git, GitHub, consumo de APIs REST e Banco de Dados Relacional.
 
-O objetivo principal é construir um pipeline completo de dados do **Campeonato Brasileiro Série A** utilizando a **Football Data API**, evoluindo a arquitetura do projeto desde a ingestão bruta (**Camada Bronze**) até o tratamento, parse de objetos complexos e estruturação relacional em Excel (**Camada Silver**).
+O objetivo principal é construir um pipeline completo de dados do **Campeonato Brasileiro Série A** utilizando a **Football Data API**, evoluindo a arquitetura do projeto desde a ingestão bruta (**Camada Bronze**), passando pelo tratamento e estruturação relacional (**Camada Silver**), até a persistência em banco de dados **PostgreSQL** para consumo analítico (**Camada Gold**).
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
-* **Linguagem:** Python
+* **Linguagem:** Python 3.x
 * **Consumo de Dados:** Requests
 * **Processamento e ETL:** Pandas, OpenPyXL, AST (`literal_eval`)
+* **Banco de Dados Relacional:** PostgreSQL / pgAdmin 4
+* **ORM e Conectores:** SQLAlchemy, Psycopg2
 * **Gestão de Variáveis:** python-dotenv
 * **Controle de Versão:** Git & GitHub
 
@@ -22,18 +22,17 @@ O objetivo principal é construir um pipeline completo de dados do **Campeonato 
 
 ## 📂 Estrutura do Projeto
 
-```text
 projeto-api/
 │
 ├── data/
-│   ├── raw/                       # Camada Bronze (Dados Brutos)
+│   ├── raw/                         # Camada Bronze (Dados Brutos em CSV)
 │   │   ├── artilheiros.csv
 │   │   ├── competicoes.csv
 │   │   ├── partidas.csv
 │   │   ├── temporadas.csv
 │   │   └── times.csv
 │   │
-│   └── processed/                 # Camada Silver (Tabelas Relacionais Tratadas)
+│   └── processed/                   # Camada Silver (Tabelas Tratadas em Excel)
 │       ├── arbitros.xlsx
 │       ├── artilheiros.xlsx
 │       ├── competicoes.xlsx
@@ -43,22 +42,21 @@ projeto-api/
 │       ├── temporadas.xlsx
 │       └── times.xlsx
 │
-├── docs/                          # Documentações e esquemas do projeto
+├── docs/                            # Documentações, esquemas do banco e relatórios
 │
-├── src/                           # Módulos Python
-│   ├── dashboard.py               # Módulo para visualizações
-│   ├── database.py                # Módulo para persistência em Banco de Dados
-│   ├── extract.py                 # Script de ingestão da API (Bronze)
-│   ├── generate_dimensions.py     # Script de parsing e modelagem das Dimensões (Silver)
-│   ├── main.py                    # Script principal de orquestração
-│   └── transform.py               # Script de limpeza e transformação de Partidas (Silver)
+├── src/                             # Módulos Python
+│   ├── carregar_dados.py            # Script ETL de carga no PostgreSQL (Silver -> Gold)
+│   ├── dashboard.py                 # Módulo para visualizações
+│   ├── database.py                  # Módulo de conexão e engine do PostgreSQL (SQLAlchemy)
+│   ├── extract.py                   # Script de ingestão da API (Bronze)
+│   ├── generate_dimensions.py       # Script de parsing e modelagem das Dimensões (Silver)
+│   ├── main.py                      # Script principal de orquestração
+│   └── transform.py                 # Script de limpeza e transformação de Partidas (Silver)
 │
-├── .env                           # Credenciais e API Keys (Ignorado no Git)
+├── .env                             # Credenciais e API Keys (Ignorado no Git)
 ├── .gitignore
 ├── README.md
 └── requirements.txt
-
-```
 
 ---
 
@@ -74,18 +72,13 @@ Os dados são consumidos via **Football Data API**.
 
 O projeto segue a arquitetura em camadas (**Medallion Architecture**):
 
-```text
-[ API REST ] ──> (src/extract.py) ──> [ data/raw/ (.csv) ] ──> (src/transform.py / generate_dimensions.py) ──> [ data/processed/ (.xlsx) ]
-                                      (Camada Bronze)                                                         (Camada Silver)
-
-```
+[ API REST ] ──> (src/extract.py) ──> [ data/raw/ (.csv) ] ──> (src/transform.py / generate_dimensions.py) ──> [ data/processed/ (.xlsx) ] ──> (src/carregar_dados.py) ──> [ PostgreSQL: futebol_db ]
+                                      (Camada Bronze)                                                           (Camada Silver)                                                  (Camada Gold)
 
 ### 1. Camada Bronze (`data/raw/`)
-
-Armazena as respostas brutas da API em formato CSV mantendo o formato original das estruturas JSON/dicionários.
+Armazena as respostas brutas da API em formato CSV mantendo a estrutura original das respostas JSON.
 
 ### 2. Camada Silver (`data/processed/`)
-
 Realiza a limpeza, tratamento de fusos horários, descompactação (*unnest*) de objetos complexos (listas e dicionários) e normalização relacional:
 
 | Tabela Processada | Fonte / Origem | Principais Tratamentos & Conteúdo |
@@ -99,14 +92,16 @@ Realiza a limpeza, tratamento de fusos horários, descompactação (*unnest*) de
 | **`artilheiros.xlsx`** | `artilheiros.csv` | Descompactação dos objetos `player` e `team` com métricas de gols/assistências. |
 | **`arbitros.xlsx`** | `partidas.csv` (`referees`) | *Unnest* e deduplicação dos árbitros e assistentes que atuaram nas partidas. |
 
+### 3. Camada Gold (`PostgreSQL - futebol_db`)
+As tabelas tratadas da Camada Silver são ingeridas e persistidas no banco **PostgreSQL** (`futebol_db`) através do SQLAlchemy, disponibilizando dados modelados em Star Schema para consulta via SQL ou conexões de Business Intelligence / API.
+
 ---
 
 ## 🚀 Como Executar o Projeto
 
 ### 1. Clonar o Repositório e Criar Ambiente Virtual
 
-```bash
-git clone [https://github.com/Jardiel-dev/projeto-api.git](https://github.com/Jardiel-dev/projeto-api.git)
+git clone https://github.com/Jardiel-dev/projeto-api.git
 cd projeto-api
 
 # Criar ambiente virtual
@@ -115,51 +110,44 @@ python -m venv .venv
 # Ativar ambiente virtual (Windows)
 .venv\Scripts\activate
 
-```
-
 ### 2. Instalar Dependências
 
-```bash
 pip install -r requirements.txt
 
-```
+### 3. Configurar Chaves e Conexão (.env)
 
-### 3. Configurar Chave da API
+Crie um arquivo `.env` na raiz do projeto com as credenciais da API e do seu Banco PostgreSQL:
 
-Crie um arquivo `.env` na raiz do projeto com a sua chave da API:
-
-```env
-API_KEY=sua_chave_aqui
-
-```
+API_KEY=sua_chave_api_aqui
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=sua_senha_aqui
+POSTGRES_HOST=localhost
+POSTGRES_PORT=5432
+POSTGRES_DB=futebol_db
 
 ### 4. Executar os Pipelines de Dados
 
 **A. Extração de Dados Brutos (Camada Bronze):**
 
-```bash
 python src/extract.py
-
-```
 
 **B. Processamento e Geração das Tabelas Relacionais (Camada Silver):**
 
-```bash
 python src/transform.py
 python src/generate_dimensions.py
 
-```
+**C. Carga no Banco PostgreSQL (Camada Gold):**
 
-Após a execução, todas as planilhas tratadas estarão disponíveis na pasta `data/processed/`.
+python src/carregar_dados.py
 
 ---
 
-## 📈 Próximos Passos
+## 📈 Status do Projeto & Próximos Passos
 
-* [ ] Carga das tabelas processadas em Banco de Dados Relacional (PostgreSQL / SQLite via `src/database.py`);
-* [ ] Modelagem Dimensional em Star Schema (Fatos e Dimensões);
+* [x] Ingestão e tratamento dos dados brutos em Camada Silver (Pandas / OpenPyXL);
+* [x] Modelagem Relacional em Star Schema (Tabela Fato `partidas` + 7 Tabelas de Dimensão);
+* [x] Configuração da infraestrutura PostgreSQL e conexão automatizada via Python (SQLAlchemy);
+* [x] Carga e povoamento automatizado das tabelas no banco de dados (`futebol_db`);
+* [x] Geração de Relatório Técnico de Execução em PDF;
+* [ ] Construção de endpoints com API REST (FastAPI/Flask) para disponibilização dos dados;
 * [ ] Construção de Dashboard interativo (Power BI / Streamlit via `src/dashboard.py`).
-
-```
-
-```
