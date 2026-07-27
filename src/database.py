@@ -1,26 +1,55 @@
-from sqlalchemy import create_engine
+import os
+from dotenv import load_dotenv
+from sqlalchemy import create_engine, text
 
-# 🔑 Configurações do Banco de Dados
-USUARIO = "postgres"
-SENHA = "749131"  
-HOST = "localhost"
-PORTA = "5432"
-BANCO = "futebol_db"
+# 1. Carrega as variáveis de ambiente do arquivo .env
+load_dotenv()
 
-# 🛠️ String de Conexão
+USUARIO = os.getenv("POSTGRES_USER", "postgres")
+SENHA = os.getenv("POSTGRES_PASSWORD")
+HOST = os.getenv("POSTGRES_HOST", "localhost")
+PORTA = os.getenv("POSTGRES_PORT", "5432")
+BANCO = os.getenv("POSTGRES_DB", "futebol_db")
+
+# URLs para os 2 passos da conexão
+URL_SERVIDO_GERAL = f"postgresql://{USUARIO}:{SENHA}@{HOST}:{PORTA}/postgres"
 DATABASE_URL = f"postgresql://{USUARIO}:{SENHA}@{HOST}:{PORTA}/{BANCO}"
 
-# 🚀 Engine do SQLAlchemy
+
+def criar_banco_se_nao_existir():
+    """PASSO 1: Conecta no servidor PostgreSQL geral e garante que o banco 'futebol_db' existe."""
+    try:
+        engine_geral = create_engine(
+            URL_SERVIDO_GERAL, isolation_level="AUTOCOMMIT"
+        )
+        with engine_geral.connect() as conn:
+            resultado = conn.execute(
+                text(f"SELECT 1 FROM pg_database WHERE datname='{BANCO}';")
+            )
+            if not resultado.scalar():
+                conn.execute(text(f"CREATE DATABASE {BANCO};"))
+                print(f"✨ Banco de dados '{BANCO}' criado com sucesso!")
+            else:
+                print(f"ℹ️ Banco de dados '{BANCO}' já existe.")
+    except Exception as e:
+        print(f"⚠️ Erro ao verificar/criar banco de dados: {e}")
+
+
+# PASSO 2: Cria a Engine oficial conectada diretamente ao banco do projeto
 engine = create_engine(DATABASE_URL)
 
 
 def testar_conexao():
+    """Testa a conexão oficial com o banco 'futebol_db'."""
     try:
         with engine.connect() as conexao:
-            print("⚡ Conexão com o PostgreSQL realizada com sucesso!")
+            print(
+                f"⚡ Conexão com o banco '{BANCO}' no PostgreSQL realizada com sucesso!"
+            )
     except Exception as e:
         print(f"❌ Erro ao conectar no banco de dados: {e}")
 
 
 if __name__ == "__main__":
+    criar_banco_se_nao_existir()
     testar_conexao()
