@@ -11,9 +11,11 @@ HOST = os.getenv("POSTGRES_HOST", "localhost")
 PORTA = os.getenv("POSTGRES_PORT", "5432")
 BANCO = os.getenv("POSTGRES_DB", "futebol_db")
 
-# URLs para os 2 passos da conexão
-URL_SERVIDO_GERAL = f"postgresql://{USUARIO}:{SENHA}@{HOST}:{PORTA}/postgres"
-DATABASE_URL = f"postgresql://{USUARIO}:{SENHA}@{HOST}:{PORTA}/{BANCO}"
+# Utiliza o driver pg8000 que lida nativamente com encodings no Windows
+URL_SERVIDO_GERAL = (
+    f"postgresql+pg8000://{USUARIO}:{SENHA}@{HOST}:{PORTA}/postgres"
+)
+DATABASE_URL = f"postgresql+pg8000://{USUARIO}:{SENHA}@{HOST}:{PORTA}/{BANCO}"
 
 
 def criar_banco_se_nao_existir():
@@ -35,7 +37,7 @@ def criar_banco_se_nao_existir():
         print(f"⚠️ Erro ao verificar/criar banco de dados: {e}")
 
 
-# PASSO 2: Cria a Engine oficial conectada diretamente ao banco do projeto
+# PASSO 2: Cria a Engine oficial do projeto
 engine = create_engine(DATABASE_URL)
 
 
