@@ -1,56 +1,46 @@
-from datetime import datetime
 import os
+from datetime import datetime
 import pandas as pd
-from sqlalchemy import inspect
+from sqlalchemy import text
 from database import criar_banco_se_nao_existir, engine
 
-# 📁 Caminhos de pastas
+# 📁 Caminhos
 PASTA_PROCESSED = os.path.join("data", "processed")
 PASTA_LOGS = "logs"
+CAMINHO_SCHEMA = os.path.join(os.path.dirname(__file__), "schema.sql")
 
-# Garantir que a pasta de logs existe
 os.makedirs(PASTA_LOGS, exist_ok=True)
 
-# 🗺️ Mapeamento: "nome_do_arquivo.xlsx": "nome_da_tabela"
 ARQUIVOS_TABELAS = {
-    "competicoes.xlsx": "competicoes",
-    "temporadas.xlsx": "temporadas",
-    "times.xlsx": "times",
-    "tecnicos.xlsx": "tecnicos",
-    "arbitros.xlsx": "arbitros",
-    "jogadores.xlsx": "jogadores",
-    "artilheiros.xlsx": "artilheiros",
-    "tabela_partidas_tratada.xlsx": "partidas",
+    "competicoes.xlsx": ("competicoes", "id_competicao"),
+    "temporadas.xlsx": ("temporadas", "id_temporada"),
+    "times.xlsx": ("times", "id_time"),
+    "tecnicos.xlsx": ("tecnicos", "id_tecnico"),
+    "arbitros.xlsx": ("arbitros", "id_arbitro"),
+    "jogadores.xlsx": ("jogadores", "id_jogador"),
+    "tabela_partidas_tratada.xlsx": ("tabela_partidas_tratada", "id_partida"),
+    "artilheiros.xlsx": ("artilheiros", "id_jogador"),
 }
 
-
-def criar_tabelas_iniciais():
-    """Etapa 2.1: Garante que as tabelas existem no banco na primeira execução."""
-    print("🛠️ [Etapa 2.1] Verificando/Criando estrutura inicial do banco...\n")
-    inspector = inspect(engine)
-
-    for arquivo, tabela in ARQUIVOS_TABELAS.items():
-        caminho_completo = os.path.join(PASTA_PROCESSED, arquivo)
-        if os.path.exists(caminho_completo):
-            if not inspector.has_table(tabela):
-                # Se a tabela não existir no PostgreSQL, cria a estrutura vazia
-                df_amostra = pd.read_excel(caminho_completo, nrows=0)
-                df_amostra.to_sql(
-                    name=tabela, con=engine, if_exists="append", index=False
-                )
-                print(f"✨ Tabela '{tabela}' criada com sucesso!")
-            else:
-                print(f"ℹ️ Tabela '{tabela}' já existe no banco.")
-
+def executar_script_sql():
+    """Etapa DDL: Executa o DDL bruto com tipos, PKs e FKs explícitas."""
+    print("🛠️ [Banco] Aplicando DDL com tipos e chaves explícitas (schema.sql)...")
+    try:
+        with open(CAMINHO_SCHEMA, "r", encoding="utf-8") as file:
+            sql_script = file.read()
+        
+        with engine.begin() as conn:  # .begin() garante commit/rollback isolado
+            conn.execute(text(sql_script))
+        print("✅ Estrutura de tabelas e relacionamentos verificada com sucesso!")
+    except Exception as e:
+        print(f"❌ Erro ao executar DDL (schema.sql): {e}")
 
 def carregar_dados_incrementais():
-    """Etapa 2.2: Identifica apenas dados novos, insere no PostgreSQL e gera logs CSV."""
-    print(
-        "\n🔄 [Etapa 2.2] Iniciando carga incremental e geração de logs...\n"
-    )
+    """Etapa DML: Identifica novos registros via PK e insere sem duplicatas."""
+    print("\n🔄 [Banco] Iniciando carga incremental...")
     data_hoje = datetime.now().strftime("%Y-%m-%d")
 
-    for arquivo, tabela in ARQUIVOS_TABELAS.items():
+    for arquivo, (tabela, col_id) in ARQUIVOS_TABELAS.items():
         caminho_completo = os.path.join(PASTA_PROCESSED, arquivo)
 
         if not os.path.exists(caminho_completo):
@@ -58,50 +48,57 @@ def carregar_dados_incrementais():
             continue
 
         try:
-            # 1. Lê os dados novos do Excel
             df_novo = pd.read_excel(caminho_completo)
 
-            if df_novo.empty:
-                print(f"ℹ️ Arquivo '{arquivo}' está vazio.")
+            if df_novo.empty or col_id not in df_novo.columns:
+                print(f"ℹ️ Tabela '{tabela}': Arquivo vazio ou coluna '{col_id}' ausente.")
                 continue
 
-            # Pega dinamicamente o nome da primeira coluna (ID principal)
-            col_id = df_novo.columns[0]
+            # Tratamento especial de datas para evitar conflito com o PostgreSQL
+            for col in df_novo.columns:
+                if "data" in col or "date" in col:
+                    df_novo[col] = pd.to_datetime(df_novo[col], errors="coerce")
 
-            # 2. Busca os IDs já existentes no banco
-            query = f'SELECT "{col_id}" FROM {tabela}'
-            df_existente = pd.read_sql(query, con=engine)
-            ids_existentes = set(df_existente[col_id])
+            # Garante tipo numérico/consistente para comparação de IDs
+            df_novo[col_id] = df_novo[col_id].astype(int)
 
-            # 3. Filtra apenas os registros verdadeiramente novos
-            df_inserir = df_novo[~df_novo[col_id].isin(ids_existentes)]
+            # Busca IDs já existentes abrindo uma conexão limpa por tabela
+            with engine.connect() as conn:
+                query = text(f'SELECT "{col_id}" FROM {tabela};')
+                df_existente = pd.read_sql(query, con=conn)
 
+            if not df_existente.empty:
+                ids_existentes = set(df_existente[col_id].astype(int))
+                df_inserir = df_novo[~df_novo[col_id].isin(ids_existentes)]
+            else:
+                df_inserir = df_novo
+
+            # Carga apenas do delta (dados novos)
             if not df_inserir.empty:
-                # 4. Insere apenas os novos dados no banco
-                df_inserir.to_sql(
-                    name=tabela, con=engine, if_exists="append", index=False
-                )
+                # Inserção isolada dentro de transação individual
+                with engine.begin() as conn_insert:
+                    df_inserir.to_sql(
+                        name=tabela, con=conn_insert, if_exists="append", index=False
+                    )
 
-                # 5. Salva o arquivo CSV de log na pasta 'logs'
                 nome_log = f"insert_{tabela}_{data_hoje}.csv"
                 caminho_log = os.path.join(PASTA_LOGS, nome_log)
                 df_inserir.to_csv(caminho_log, index=False)
 
                 print(
-                    f"✅ Tabela '{tabela}': {len(df_inserir)} novos registros inseridos! Log salvo em: {caminho_log}"
+                    f"✅ Tabela '{tabela}': {len(df_inserir)} novos registros inseridos! Log: {caminho_log}"
                 )
             else:
-                print(
-                    f"ℹ️ Tabela '{tabela}': Nenhum registro novo para inserir."
-                )
+                print(f"ℹ️ Tabela '{tabela}': 0 registros novos. Nenhuma duplicata gerada.")
 
         except Exception as e:
             print(f"❌ Erro ao processar tabela '{tabela}': {e}")
 
-    print("\n🎉 Processo de carga incremental finalizado!")
-
+def executar_carga_completa_banco():
+    """Função orquestradora oficial para ser chamada na main.py"""
+    criar_banco_se_nao_existir()
+    executar_script_sql()
+    carregar_dados_incrementais()
 
 if __name__ == "__main__":
-    criar_banco_se_nao_existir()
-    criar_tabelas_iniciais()
-    carregar_dados_incrementais()
+    executar_carga_completa_banco()

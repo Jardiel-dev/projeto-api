@@ -1,0 +1,945 @@
+id_jogador,id_time,nome_jogador,posicao,nacionalidade,data_nascimento
+1230,1765,Fábio,Goleiro,Brazil,1980-09-30
+44235,1765,Vitor Eudes,Goleiro,Brazil,1998-10-21
+136654,1765,Marcelo Pitaluga,Goleiro,Brazil,2002-12-20
+169278,1765,Gustavo Ramalho,Goleiro,Brazil,2002-09-16
+291296,1765,Lucas Emanuel,Goleiro,Brazil,2008-05-25
+1107,1765,Samuel Xavier,Defensor,Brazil,1990-06-06
+1215,1765,Igor Rabello,Defensor,Brazil,1995-04-28
+1546,1765,Renê,Defensor,Brazil,1992-09-14
+12594,1765,Guga,Defensor,Brazil,1998-08-29
+15929,1765,Guilherme Arana,Defensor,Brazil,1997-04-14
+97470,1765,Ignácio,Defensor,Brazil,1996-12-01
+98654,1765,Juan Freytes,Defensor,Argentina,2000-01-11
+221385,1765,Julio Cesar,Defensor,Brazil,2006-11-06
+250800,1765,Jemmes,Defensor,Brazil,2000-04-09
+274161,1765,Davi Schuindt,Defensor,Brazil,2004-04-26
+76,1765,Ganso,Meio-campista,Brazil,1989-10-12
+1154,1765,Alisson,Meio-campista,Brazil,1993-06-25
+8503,1765,Otávio,Meio-campista,Brazil,1994-05-04
+23333,1765,Yeferson Soteldo,Meio-campista,Venezuela,1997-06-30
+28561,1765,David Terans,Meio-campista,Uruguay,1994-08-11
+61369,1765,Nonato,Meio-campista,Brazil,1998-03-03
+76910,1765,Luciano Acosta,Meio-campista,Argentina,1994-05-31
+77159,1765,Jefferson Savarino,Meio-campista,Venezuela,1996-11-11
+104480,1765,Julián Millán,Meio-campista,Colombia,1998-03-27
+145985,1765,Hércules,Meio-campista,Brazil,2000-10-20
+179177,1765,Martinelli,Meio-campista,Brazil,2001-10-05
+203305,1765,João Pedro,Meio-campista,Brazil,2005-07-15
+245200,1765,Facundo Bernal,Meio-campista,Uruguay,2003-08-21
+274154,1765,Kaio,Meio-campista,Brazil,2007-02-19
+274160,1765,Breno,Meio-campista,Brazil,2007-03-24
+274164,1765,Davi Melo,Meio-campista,Brazil,2005-11-20
+278022,1765,Vagno,Meio-campista,Brazil,2007-09-26
+291284,1765,Naarã Teixeira,Meio-campista,Brazil,2008-01-12
+21689,1765,Hulk,Atacante,Brazil,1986-07-25
+21951,1765,Germán Cano,Atacante,Argentina,1988-02-02
+28614,1765,Agustín Canobbio,Atacante,Uruguay,1998-10-01
+178998,1765,Yago,Atacante,Brazil,2001-08-02
+181336,1765,Kevin Serna,Atacante,Colombia,1997-12-22
+191363,1765,Rodrigo Castillo,Atacante,Argentina,1999-02-26
+203321,1765,Agner Moura,Atacante,Brazil,2005-03-22
+221342,1765,Matheus Reis,Atacante,Mexico,2007-04-02
+273195,1765,Riquelme Felipe,Atacante,Brazil,2007-03-13
+274162,1765,Oliver,Atacante,Brazil,2007-05-11
+278023,1765,Keven Samuel,Atacante,Brazil,2007-01-26
+278024,1765,Wesley Natã,Atacante,Brazil,2008-04-18
+278025,1765,Kelwin,Atacante,Brazil,2006-03-24
+157533,1765,John Kennedy,Centroavante,Brazil,2002-05-18
+1695,1766,Everson,Goleiro,Brazil,1990-07-22
+178929,1766,Gabriel Delfim,Goleiro,Brazil,2002-07-10
+276227,1766,Robert,Goleiro,Brazil,2005-02-03
+276267,1766,Pedro,Goleiro,Brazil,2006-05-16
+290801,1766,Kaio de Assis,Goleiro,Brazil,2008-05-03
+1773,1766,Vitor Hugo,Defensor,Brazil,1991-05-20
+8395,1766,Júnior Alonso,Defensor,Paraguay,1993-02-09
+24673,1766,Ángelo Preciado,Defensor,Ecuador,1998-02-18
+141379,1766,Natanael,Defensor,Brazil,2002-01-05
+218742,1766,Iván Román,Defensor,Chile,2006-07-12
+249148,1766,Igor,Defensor,Brazil,2006-02-03
+249463,1766,Samuel,Defensor,Brazil,2006-02-09
+285293,1766,Vitor Fernandes,Defensor,Brazil,2008-03-04
+290769,1766,Luís Gustavo,Defensor,Brazil,2006-03-24
+290772,1766,Kauã Pascini,Defensor,Brazil,2008-03-05
+1447,1766,Maycon,Meio-campista,Brazil,1997-07-15
+16476,1766,Bernard,Meio-campista,Brazil,1992-09-08
+24670,1766,Alan Franco,Meio-campista,Ecuador,1998-08-21
+46266,1766,Tomás Cuello,Meio-campista,Argentina,2000-03-05
+72781,1766,Gustavo Scarpa,Meio-campista,Brazil,1994-01-05
+82534,1766,Igor Gomes,Meio-campista,Brazil,1999-03-17
+178854,1766,Victor Hugo Gomes,Meio-campista,Brazil,2004-05-11
+179174,1766,Alan Minda,Meio-campista,Ecuador,2003-05-14
+189371,1766,Alexsander Gomes,Meio-campista,Brazil,2003-10-08
+213331,1766,Tomás Pérez,Meio-campista,Argentina,2005-08-26
+260075,1766,Patrick Silva,Meio-campista,Brazil,2004-03-19
+276189,1766,José Phelipe,Meio-campista,Brazil,2005-06-14
+276210,1766,Hendel,Meio-campista,Brazil,2008-04-03
+276263,1766,Lucas Louback,Meio-campista,Brazil,2006-04-13
+285292,1766,Mateus Iseppe,Meio-campista,Brazil,2006-05-02
+288491,1766,Wallysson Freitas,Meio-campista,Brazil,2008-04-25
+290766,1766,Murillo Cardoso,Meio-campista,Brazil,2006-07-21
+290768,1766,Mamady Cissé,Meio-campista,Guinea,2007-01-01
+294994,1766,Lucas Silva,Meio-campista,Brazil,2006-03-30
+1182,1766,Dudu,Atacante,Brazil,1992-01-07
+7569,1766,Mateo Cassierra,Atacante,Colombia,1997-04-13
+276224,1766,Eric Soares,Atacante,Brazil,2006-01-08
+276280,1766,Ryan Felipe,Atacante,Brazil,2006-07-28
+287624,1766,João Castro,Atacante,Brazil,2009-07-16
+290765,1766,Cauã Campos,Atacante,Brazil,2008-06-30
+294996,1766,Riquelme Henrique,Atacante,Brazil,2009-01-17
+131258,1766,Ruan,Zagueiro,Brazil,1999-06-07
+123350,1766,Reinier,Meio-campista Ofensivo,Brazil,2002-01-19
+2283,1766,Lyanco,Zagueiro,Brazil,1997-02-01
+1671,1766,Renan Lodi,Lateral Esquerdo,Brazil,1998-04-08
+1170,1767,Weverton,Goleiro,Brazil,1987-12-13
+168962,1767,Gabriel Chapeco,Goleiro,Brazil,2000-03-29
+249197,1767,Thiago Beltrame,Goleiro,Brazil,2003-07-02
+290930,1767,Gabriel Menegon,Goleiro,Brazil,2008-10-14
+1072,1767,Marlon,Defensor,Brazil,1997-05-20
+1138,1767,Walter Kannemann,Defensor,Argentina,1991-03-14
+1178,1767,Marcos Rocha,Defensor,Brazil,1988-12-11
+1387,1767,João Pedro,Defensor,Brazil,1996-11-15
+1436,1767,Fabián Balbuena,Defensor,Paraguay,1991-08-23
+147442,1767,Erick Noriega,Defensor,Peru,2001-10-22
+168793,1767,Wagner Leonardo,Defensor,Brazil,1999-07-23
+181463,1767,Gustavo Martins,Defensor,Brazil,2002-08-11
+211602,1767,Viery,Defensor,Brazil,2005-01-02
+263955,1767,Athos Thawan,Defensor,Brazil,2005-03-29
+276217,1767,Borges,Defensor,Brazil,2006-06-07
+276278,1767,Luis Guedes,Defensor,Brazil,2008-01-16
+276281,1767,Pedro Gabriel,Defensor,Brazil,2007-06-06
+294384,1767,Vitor Ramon,Defensor,Brazil,2008-01-15
+1087,1767,Dodi,Meio-campista,Brazil,1996-04-17
+33078,1767,Felipe Carballo,Meio-campista,Uruguay,1996-10-04
+46178,1767,Mathías Villasanti,Meio-campista,Paraguay,1997-01-24
+74729,1767,Caio Paulista,Meio-campista,Brazil,1998-05-11
+116177,1767,Tetê,Meio-campista,Brazil,2000-02-15
+117570,1767,José Enamorado,Meio-campista,Colombia,1999-01-13
+170674,1767,Juan Ignacio Nardoni,Meio-campista,Argentina,2002-07-14
+178482,1767,Miguel Monsalve,Meio-campista,Colombia,2004-02-27
+213173,1767,Leonel Perez,Meio-campista,Argentina,2004-08-09
+249139,1767,Riquelme,Meio-campista,Brazil,2006-08-13
+273290,1767,Tiago Goncalves,Meio-campista,Brazil,2008-02-02
+276206,1767,Bernardo Zortea,Meio-campista,Brazil,2007-03-21
+276279,1767,Gabriel Mec,Meio-campista,Brazil,2008-04-11
+290803,1767,Jefinho,Meio-campista,Brazil,2006-12-14
+293081,1767,Rafael Gomes,Meio-campista,Brazil,2008-04-15
+3219,1767,Cristian Pavón,Atacante,Argentina,1996-01-21
+8863,1767,Francis Amuzu,Atacante,Belgium,1999-08-23
+194867,1767,Andre,Atacante,Brazil,2001-12-17
+276220,1767,Smiley,Atacante,Brazil,2007-05-08
+276269,1767,Jeferson,Atacante,Brazil,2007-01-16
+290701,1767,Roger Dias,Atacante,Brazil,2008-04-29
+37833,1767,Carlos Vinícius,Centroavante,Brazil,1995-03-25
+3467,1767,Martin Braithwaite,Centroavante,Denmark,1991-06-05
+3230,1767,Willian,Ponta Esquerdo,Brazil,1988-08-09
+1148,1767,Arthur,Volante,Brazil,1996-08-12
+1662,1768,Santos,Goleiro,Brazil,1990-03-17
+187426,1768,Mycael,Goleiro,Brazil,2004-03-12
+249158,1768,Matheus Soares,Goleiro,Brazil,2005-01-10
+278568,1768,Maksym Voronov,Goleiro,Ukraine,2006-06-09
+1386,1768,Léo,Defensor,Brazil,1996-03-06
+1584,1768,Dudu,Defensor,Brazil,1997-05-30
+22166,1768,Juan Aguirre,Defensor,Colombia,1996-08-29
+22673,1768,Alejandro García,Defensor,Colombia,2001-02-28
+104494,1768,Carlos Terán,Defensor,Colombia,2000-09-24
+127557,1768,Gastón Benavídez,Defensor,Argentina,1995-10-23
+153853,1768,Lucas Esquivel,Defensor,Argentina,2001-10-14
+203402,1768,Derik,Defensor,Brazil,2005-07-24
+203659,1768,Filipinho,Defensor,Brazil,2001-10-18
+227055,1768,Marcos Andre,Defensor,Brazil,2006-03-23
+249229,1768,Arthur Dias,Defensor,Brazil,2007-04-10
+286575,1768,Gilberto Leite,Defensor,Brazil,2005-03-27
+290567,1768,Murilo Camargo,Defensor,Brazil,2009-03-29
+290568,1768,Bruno Ramos,Defensor,Brazil,2008-08-16
+290570,1768,Claudio Henrique,Defensor,Brazil,2005-10-26
+1083,1768,Jádson,Meio-campista,Brazil,1993-08-30
+8357,1768,Luiz Gustavo,Meio-campista,Brazil,1987-07-23
+131264,1768,Bruno Zapelli,Meio-campista,Argentina,2002-05-17
+178353,1768,Juan Portilla,Meio-campista,Colombia,1998-09-12
+202198,1768,Isaac,Meio-campista,Brazil,2004-04-24
+211606,1768,Dudu,Meio-campista,Brazil,2006-01-01
+221387,1768,Chiqueti,Meio-campista,Brazil,2005-02-09
+244753,1768,João Victor,Meio-campista,Brazil,2006-05-12
+249225,1768,Diogo Riquelme,Meio-campista,Brazil,2005-04-23
+278937,1768,Vitinho,Meio-campista,Brazil,2007-04-19
+290564,1768,Lucas Marezi,Meio-campista,Brazil,2006-01-18
+290565,1768,Gustavo Veiga,Meio-campista,Brazil,2006-01-16
+290566,1768,Stabelini,Meio-campista,Brazil,2007-05-14
+291293,1768,Guilherme Back,Meio-campista,Brazil,2006-09-23
+291295,1768,Benjamín Brito,Meio-campista,Argentina,2007-07-25
+293116,1768,Lima,Meio-campista,Brazil,1995-11-01
+56226,1768,Julimar,Atacante,Brazil,2001-01-25
+176630,1768,Renan,Atacante,Brazil,2003-01-31
+192070,1768,Kevin Viveros,Atacante,Colombia,2000-04-26
+249382,1768,Renan Peixoto,Atacante,Brazil,2000-02-21
+249477,1768,Leozinho,Atacante,Brazil,1998-12-05
+259923,1768,Kayke,Atacante,Brazil,2008-04-26
+278610,1768,Sorriso,Atacante,Brazil,2006-04-15
+290569,1768,Lucas Amorim,Atacante,Brazil,2006-06-05
+291286,1768,Juliano Santini,Atacante,Brazil,2007-02-23
+8606,1768,Stiven Mendoza,Ponta Esquerdo,Colombia,1992-06-27
+1562,1769,Marcelo Lomba,Goleiro,Brazil,1986-12-18
+118029,1769,Carlos Miguel,Goleiro,Brazil,1998-10-09
+281726,1769,Wanderson Ferreira,Goleiro,Brazil,2005-02-07
+283241,1769,Luiz Sá,Goleiro,Brazil,2007-03-01
+287885,1769,Kauan Lima,Goleiro,Brazil,2007-02-14
+1741,1769,Gustavo Gómez,Defensor,Paraguay,1993-05-06
+28740,1769,Joaquín Piquerez,Defensor,Uruguay,1998-08-24
+46454,1769,Alexander Barboza,Defensor,Argentina,1995-03-16
+115222,1769,Bruno Fuchs,Defensor,Brazil,1999-04-01
+115559,1769,Khellven,Defensor,Brazil,2001-02-25
+170525,1769,Murilo Cerqueira,Defensor,Brazil,1997-03-27
+183528,1769,Agustin Giay,Defensor,Argentina,2004-01-16
+206776,1769,Jefte,Defensor,Brazil,2003-12-21
+260932,1769,Luis Gustavo,Defensor,Brazil,2006-06-07
+281040,1769,Arthur Santana,Defensor,Brazil,2005-09-04
+292249,1769,Meykson Silmark,Defensor,Brazil,2006-04-01
+295654,1769,Koné Zié Mohamed,Defensor,Ivory Coast,2007-10-20
+1080,1769,Marlon Freitas,Meio-campista,Brazil,1995-03-27
+22306,1769,Jhon Arias,Meio-campista,Colombia,1997-09-21
+45173,1769,Lucas Evangelista,Meio-campista,Brazil,1995-05-06
+119594,1769,Mauricio,Meio-campista,Paraguay,2001-06-22
+130957,1769,Emiliano Martínez,Meio-campista,Uruguay,1999-08-17
+181523,1769,Vitor de Almeida,Meio-campista,Brazil,2005-10-25
+270549,1769,Vitor Figueiredo,Meio-campista,Brazil,2006-03-03
+278888,1769,Victor Gabriel,Meio-campista,Brazil,2006-11-22
+281587,1769,Rafael Coutinho,Meio-campista,Brazil,2006-03-24
+282123,1769,Erick Machado,Meio-campista,Brazil,2007-01-21
+287767,1769,Luis Pacheco,Meio-campista,Brazil,2008-02-02
+291831,1769,Gabriel Silva,Meio-campista,Brazil,2007-02-04
+295840,1769,Eduardo Conceição,Meio-campista,Brazil,2009-12-07
+1490,1769,Paulinho,Atacante,Brazil,2000-07-15
+140647,1769,Ramón Sosa,Atacante,Paraguay,1999-08-31
+170698,1769,José Manuel López,Atacante,Argentina,2000-12-06
+249169,1769,Luighi Hanri,Atacante,Brazil,2006-04-30
+249222,1769,Riquelme Fillipi,Atacante,Brazil,2006-09-15
+262366,1769,Larson,Atacante,Brazil,2005-07-10
+274216,1769,Allan,Atacante,Brazil,2004-04-19
+287314,1769,Heittor da Silva,Atacante,Brazil,2007-09-18
+181439,1769,Vítor Roque,Centroavante,Brazil,2005-02-28
+33153,1769,Andreas Pereira,Meio-campista Ofensivo,Brazil,1996-01-01
+2060,1769,Felipe Anderson,Ponta Esquerdo,Brazil,1993-04-15
+3221,1770,Neto,Goleiro,Brazil,1989-07-19
+13152,1770,Raul,Goleiro,Brazil,1997-07-28
+179157,1770,Leo Linck,Goleiro,Brazil,2001-03-03
+250332,1770,Cristhian Loor,Goleiro,Ecuador,2006-03-09
+250759,1770,Rhyan Luca,Goleiro,Brazil,2006-12-02
+1239,1770,Vitinho,Defensor,Brazil,1999-07-23
+8457,1770,Marçal,Defensor,Brazil,1989-02-19
+15904,1770,Alex Telles,Defensor,Brazil,1992-12-15
+28433,1770,Nahuel Ferraresi,Defensor,Venezuela,1998-11-19
+37418,1770,Kaio Pantaleão,Defensor,Brazil,1995-09-18
+151999,1770,Caio Roque,Defensor,Brazil,2002-01-09
+160792,1770,Mateo Ponte,Defensor,Uruguay,2003-05-24
+171861,1770,Bastos,Defensor,Angola,1991-11-23
+206227,1770,Jhoan Hernández,Defensor,Colombia,2006-02-20
+211500,1770,Ythallo,Defensor,Brazil,2004-07-22
+249506,1770,Anthony,Defensor,Brazil,2005-07-12
+260984,1770,Wallace,Defensor,Brazil,2007-05-10
+274158,1770,Victor Hugo,Defensor,Brazil,2007-06-04
+274540,1770,Caio Valle,Defensor,Brazil,2007-10-11
+276799,1770,Carlos Santos,Defensor,Brazil,2005-08-16
+286981,1770,Gabriel Pereira,Defensor,Brazil,2006-04-16
+287447,1770,Gabriel Abdias,Defensor,Brazil,2006-06-19
+287787,1770,Marcos Vinagre,Defensor,Brazil,2007-02-15
+291294,1770,Pedro de Paula,Defensor,Brazil,2008-10-01
+291298,1770,João Lira,Defensor,Brazil,2008-02-24
+291832,1770,Arthur Alves,Defensor,Brazil,2008-09-16
+1580,1770,Edenilson,Meio-campista,Brazil,1989-12-18
+2096,1770,Allan,Meio-campista,Brazil,1991-01-08
+113671,1770,Santiago Rodríguez,Meio-campista,Uruguay,2000-01-08
+149704,1770,Danilo dos Santos de Oliveira,Meio-campista,Brazil,2001-04-29
+154595,1770,Cristian Medina,Meio-campista,Argentina,2002-06-01
+165989,1770,Lucas Villalba,Meio-campista,Uruguay,2001-05-11
+169234,1770,Matheus Martins,Meio-campista,Brazil,2003-07-16
+203361,1770,Bernardo Valim,Meio-campista,Brazil,2006-01-30
+203397,1770,Newton,Meio-campista,Brazil,2000-03-12
+206393,1770,Jordan Barrera,Meio-campista,Colombia,2006-04-11
+221555,1770,Kaua Branco,Meio-campista,Brazil,2006-05-04
+250493,1770,Alvaro Montoro,Meio-campista,Argentina,2007-04-17
+274146,1770,Lucyo,Meio-campista,Brazil,2006-03-15
+274539,1770,Lucas Camilo,Meio-campista,Brazil,2006-05-25
+274541,1770,Zappelini,Meio-campista,Brazil,2007-03-26
+275395,1770,Kauan,Meio-campista,Brazil,2006-04-15
+291292,1770,Samuel da Silva,Meio-campista,Brazil,2008-03-30
+291300,1770,Davi Alves,Meio-campista,Brazil,2008-06-27
+291306,1770,Felipe Januário,Meio-campista,Brazil,2007-05-03
+77,1770,Joaquín Correa,Atacante,Argentina,1994-08-13
+12653,1770,Júnior Santos,Atacante,Brazil,1994-10-11
+172113,1770,Chris Ramos,Atacante,Spain,1997-01-18
+182538,1770,Weliton Santos,Atacante,Brazil,2005-04-13
+206708,1770,Nathan Ribeiro,Atacante,Brazil,2005-02-16
+278626,1770,Arthur Izaque,Atacante,Brazil,2007-06-29
+286833,1770,Kadir Barría,Atacante,Panama,2007-07-18
+291288,1770,Rogerio Medeiros,Atacante,Brazil,2008-04-11
+291305,1770,Matheusinho,Atacante,Brazil,2007-03-30
+291892,1770,Miguel Caldas,Atacante,Brazil,2008-07-20
+1723,1770,Arthur Cabral,Centroavante,Brazil,1998-04-25
+296793,1770,Victor Gonçalves,Não Informado,Brazil,2009-08-22
+296792,1770,Herick Garcia,Não Informado,Brazil,2009-03-02
+1431,1771,Cássio,Goleiro,Brazil,1987-06-06
+178822,1771,Matheus Cunha,Goleiro,Brazil,2001-05-24
+203390,1771,Otávio,Goleiro,Brazil,2005-12-27
+276287,1771,Marcelo,Goleiro,Brazil,2006-02-12
+278776,1771,Vitor Lamounier,Goleiro,Brazil,2007-10-18
+290770,1771,Felipe Teixeira,Goleiro,Brazil,2009-05-05
+1266,1771,Fabrício Bruno,Defensor,Brazil,1996-02-12
+1434,1771,Fágner,Defensor,Brazil,1989-06-11
+9418,1771,William,Defensor,Brazil,1995-04-03
+45865,1771,Lucas Villalba,Defensor,Argentina,1994-08-19
+115095,1771,João Marcelo,Defensor,Brazil,2000-06-13
+181633,1771,Kaiki Bruno,Defensor,Brazil,2003-03-08
+207251,1771,Jonathan,Defensor,Brazil,2004-05-27
+249190,1771,Ian,Defensor,Brazil,2009-01-09
+276232,1771,José,Defensor,Brazil,2005-08-31
+276255,1771,Kaua Prates,Defensor,Brazil,2008-08-12
+278484,1771,Kauã Moraes,Defensor,Brazil,2006-06-29
+278775,1771,Nicolas Pontes,Defensor,Brazil,2006-01-14
+290771,1771,Kaiquy,Defensor,Brazil,2006-05-17
+295598,1771,Bryan,Defensor,Brazil,2010-08-23
+1246,1771,Lucas Romero,Meio-campista,Argentina,1994-04-18
+1250,1771,Lucas Silva,Meio-campista,Brazil,1993-02-16
+1815,1771,Gerson,Meio-campista,Brazil,1997-05-20
+49264,1771,Wanderson,Meio-campista,Brazil,1994-10-07
+118245,1771,Christian,Meio-campista,Brazil,2000-12-19
+203387,1771,João Wellington,Meio-campista,Brazil,2004-01-02
+205585,1771,Keny Arroyo,Meio-campista,Ecuador,2006-02-14
+277675,1771,Murilo,Meio-campista,Brazil,2006-03-13
+288902,1771,Rayan,Meio-campista,Brazil,2007-01-19
+289855,1771,Rhuan Gabriel,Meio-campista,Brazil,2006-02-06
+291156,1771,Danilo Gimenes,Meio-campista,Brazil,2007-02-25
+40067,1771,Chico,Atacante,Brazil,1995-05-05
+45490,1771,Matheus Pereira,Atacante,Brazil,1996-05-05
+169004,1771,Bruno Rodrigues,Atacante,Brazil,1997-03-07
+218422,1771,Neizer Villarreal,Atacante,Colombia,2005-04-24
+224582,1771,Ruan,Atacante,Brazil,2006-08-10
+272933,1771,Kenji,Atacante,Brazil,2006-01-30
+276286,1771,Bruno Ferreira,Atacante,Brazil,2005-08-04
+169277,1771,Marquinhos,Ponta Direito,Brazil,2003-04-07
+91310,1771,Kaio Jorge,Centroavante,Brazil,2002-01-24
+22040,1771,Luis Sinisterra,Ponta Esquerdo,Colombia,1999-06-17
+6532,1771,Walace,Volante,Brazil,1995-04-04
+1153,1771,Matheus Henrique,Meio-campista Central,Brazil,1997-12-19
+297547,1771,Felipe Morais,Não Informado,Brazil,2008-08-29
+13237,1772,Rafael Santos,Goleiro,Brazil,1989-03-14
+73828,1772,Anderson,Goleiro,Brazil,1998-03-05
+276113,1772,Matheus Aurélio,Goleiro,Brazil,1999-06-23
+292444,1772,Kainã,Goleiro,Brazil,2005-05-17
+1272,1772,Bruno Pacheco,Defensor,Brazil,1991-12-08
+1274,1772,Rafael Thyere,Defensor,Brazil,1993-05-17
+1675,1772,Marcinho,Defensor,Brazil,1995-06-08
+18338,1772,Neto Pessoa,Defensor,Brazil,1994-05-16
+19255,1772,Marcos Vinicius,Defensor,Brazil,1997-03-26
+105065,1772,Walter Clar,Defensor,Paraguay,1994-09-27
+139972,1772,Bruno Leonardo,Defensor,Brazil,1996-06-02
+140903,1772,Joao Paulo,Defensor,Brazil,1997-07-04
+140947,1772,Eduardo Doma,Defensor,Brazil,1998-08-29
+143146,1772,Victor Caetano,Defensor,Brazil,1997-10-19
+169460,1772,Mancha,Defensor,Brazil,2001-02-13
+206864,1772,Eduardo Lopes,Defensor,Brazil,2006-04-07
+220748,1772,João Vitor,Defensor,Brazil,1998-03-31
+249490,1772,Kauan Gomes,Defensor,Brazil,2003-04-07
+285706,1772,Jackson,Defensor,Brazil,2004-08-28
+292154,1772,Vinicius Eduardo,Defensor,Brazil,2005-02-18
+294100,1772,Fernando da Silva,Defensor,Brazil,1999-11-16
+294205,1772,Felipe da Fonseca,Defensor,Brazil,2008-02-06
+295030,1772,Marcio Kalebe,Defensor,Brazil,2007-02-02
+1485,1772,Giovanni Augusto,Meio-campista,Brazil,1989-09-05
+7838,1772,Yannick Bolasie,Meio-campista,DR Congo,1989-05-24
+13922,1772,Jean Carlos,Meio-campista,Brazil,1992-02-15
+18946,1772,Wermeson,Meio-campista,Brazil,2001-02-16
+118377,1772,Camilo,Meio-campista,Brazil,1999-02-23
+119630,1772,Everton,Meio-campista,Brazil,1995-04-10
+128785,1772,Rafael Carvalheira,Meio-campista,Brazil,1999-05-26
+138222,1772,Ênio,Meio-campista,Brazil,2001-03-03
+171073,1772,Higor Meritao,Meio-campista,Brazil,1994-06-23
+181451,1772,Kaká,Meio-campista,Brazil,2005-08-08
+203293,1772,Rubens Tadeu,Meio-campista,Brazil,2003-03-28
+203983,1772,Italo Vargas,Meio-campista,Brazil,2002-10-13
+213384,1772,Wellington,Meio-campista,Brazil,2007-04-14
+249466,1772,Rodrigo,Meio-campista,Brazil,2007-07-03
+250726,1772,Robert Conceição,Meio-campista,Brazil,2003-07-20
+273011,1772,David Antunes,Meio-campista,Brazil,2005-08-17
+294047,1772,Kauan Godoy,Meio-campista,Brazil,2007-06-06
+294050,1772,Kauê Arno,Meio-campista,Brazil,2008-06-06
+294515,1772,Yago,Meio-campista,Brazil,2006-04-11
+295236,1772,Igor Rampazzo,Meio-campista,Brazil,2007-01-24
+22136,1772,Kevin Ramírez,Atacante,Uruguay,1994-04-01
+150815,1772,Maurício Garcez,Atacante,Brazil,1997-03-16
+154554,1772,Vinicius,Atacante,Brazil,1999-05-28
+221795,1772,Alberto Pagnoncelli,Atacante,Brazil,2006-02-16
+278710,1772,Gleidson,Atacante,Brazil,2007-04-13
+289322,1772,João Henrique,Atacante,Brazil,
+294046,1772,Luizão,Atacante,Brazil,2006-01-27
+294049,1772,Miguel Miranda,Atacante,Brazil,2006-08-27
+294052,1772,Iago,Atacante,Brazil,2007-05-17
+294204,1772,Matheus Milani,Atacante,Brazil,2006-05-25
+294206,1772,Talison,Atacante,Brazil,2007-04-17
+294207,1772,Bernardo,Atacante,Brazil,2006-11-30
+171241,1776,Carlos Coronel,Goleiro,Paraguay,1996-12-29
+179023,1776,Rafael Monteiro,Goleiro,Brazil,1989-06-23
+179818,1776,Young,Goleiro,Brazil,2002-03-07
+249208,1776,Felipe,Goleiro,Brazil,2005-11-19
+276229,1776,João Pedro,Goleiro,Brazil,2006-04-10
+1338,1776,Robert Arboleda,Defensor,Ecuador,1991-10-22
+13647,1776,Lucas Ramon,Defensor,Brazil,1994-03-07
+46523,1776,Alan Franco,Defensor,Argentina,1996-10-11
+59844,1776,Enzo Díaz,Defensor,Argentina,1995-12-07
+73058,1776,Luan,Defensor,Brazil,1999-05-14
+79609,1776,José Sabino,Defensor,Brazil,1996-10-25
+177628,1776,João Moreira,Defensor,Brazil,2004-05-21
+181372,1776,Matheus Doria,Defensor,Brazil,1994-11-08
+192632,1776,Matheus Belém,Defensor,Brazil,2003-03-13
+249179,1776,Igor Teixeira,Defensor,Brazil,2007-03-07
+249302,1776,Isac,Defensor,Brazil,2006-04-02
+260264,1776,Igor Odoni,Defensor,Brazil,2007-08-19
+276249,1776,Pedro Henrique,Defensor,Brazil,2007-01-15
+283427,1776,Nicolas,Defensor,Brazil,2007-04-08
+290515,1776,Raphael,Defensor,Brazil,2005-03-13
+294367,1776,Luis Osorio,Defensor,Brazil,2006-09-06
+8003,1776,Lucas Moura,Meio-campista,Brazil,1992-08-13
+9946,1776,Cauly,Meio-campista,Brazil,1995-09-15
+13860,1776,Danielzinho,Meio-campista,Brazil,1994-11-04
+85523,1776,Marcos Antônio,Meio-campista,Brazil,2000-06-13
+103499,1776,Ferreira,Meio-campista,Brazil,1997-12-31
+168954,1776,Damian Bobadilla,Meio-campista,Paraguay,2001-07-11
+169542,1776,Pablo Maia,Meio-campista,Brazil,2002-01-10
+206664,1776,Felipe Negrucci,Meio-campista,Brazil,2004-05-14
+276242,1776,Mateus Manso,Meio-campista,Brazil,2004-05-24
+276268,1776,Pedrinho,Meio-campista,Brazil,2007-04-24
+276272,1776,Maik,Meio-campista,Brazil,2005-01-03
+276437,1776,Hugo,Meio-campista,Brazil,2004-01-19
+292151,1776,Djhordney,Meio-campista,Brazil,2007-06-17
+1192,1776,Artur Guimaraes,Atacante,Brazil,1998-02-15
+3137,1776,Jonathan Calleri,Atacante,Argentina,1993-09-23
+42901,1776,Luciano,Atacante,Brazil,1993-05-18
+45459,1776,André Silva,Atacante,Brazil,1997-06-03
+149959,1776,Gonzalo Tapia,Atacante,Chile,2002-02-18
+273330,1776,Ryan Rodrigues,Atacante,Brazil,2006-11-21
+276282,1776,Lucca Marques,Atacante,Brazil,2007-06-14
+276288,1776,Paulo Sérgio,Atacante,Brazil,2005-05-17
+291830,1776,Perivan,Atacante,Brazil,2007-04-14
+6475,1776,Wendell,Lateral Esquerdo,Brazil,1993-07-20
+3244,1776,Cédric,Lateral Direito,Portugal,1991-08-31
+1832,1776,Rafael Tolói,Zagueiro,Italy,1990-10-10
+1296,1777,João Paulo,Goleiro,Brazil,1995-06-29
+1496,1777,Ronaldo,Goleiro,Brazil,1996-08-22
+1664,1777,Léo Vieira,Goleiro,Brazil,1990-09-22
+203299,1777,Victor,Goleiro,Brazil,2006-05-03
+203377,1777,Gabriel Souza,Goleiro,Brazil,2007-02-28
+249605,1777,Iuri dos Santos,Goleiro,Brazil,2007-02-11
+290802,1777,Fabio Simplicio,Goleiro,Brazil,2008-01-09
+1073,1777,Gilberto,Defensor,Brazil,1993-03-07
+1205,1777,Kanu,Defensor,Brazil,1997-03-07
+13419,1777,David Duarte,Defensor,Brazil,1995-01-24
+122794,1777,Santiago Ramos,Defensor,Argentina,2001-11-21
+140873,1777,Luciano Juba,Defensor,Brazil,1999-08-29
+179535,1777,Marcos Victor,Defensor,Brazil,2001-12-26
+181587,1777,Gabriel Xavier,Defensor,Brazil,2001-05-06
+194863,1777,Jose Guilherme,Defensor,Brazil,2005-03-16
+203291,1777,Gerald Santos,Defensor,Brazil,2007-11-01
+249149,1777,Pedro Henrique,Defensor,Brazil,2006-01-19
+249151,1777,Luiz Gustavo,Defensor,Brazil,2006-04-12
+250314,1777,Román Gómez,Defensor,Argentina,2004-07-14
+274110,1777,Frederico,Defensor,Brazil,2006-05-23
+1547,1777,Jean Lucas,Meio-campista,Brazil,1998-06-22
+1548,1777,Éverton Ribeiro,Meio-campista,Brazil,1989-04-10
+18478,1777,Erick,Meio-campista,Brazil,1997-11-14
+107803,1777,Nicolás Acevedo,Meio-campista,Uruguay,1999-04-14
+110928,1777,Rodrigo Nestor,Meio-campista,Brazil,2000-08-09
+136393,1777,Caio Alexandre,Meio-campista,Brazil,1999-02-24
+142131,1777,Cristian Olivera,Meio-campista,Uruguay,2002-04-17
+191376,1777,Mateo Sanabria,Meio-campista,Argentina,2004-03-31
+203386,1777,Sidney,Meio-campista,Brazil,2006-03-12
+249189,1777,Wendel Silva,Meio-campista,Brazil,2006-02-28
+249194,1777,Marco Antônio,Meio-campista,Brazil,2006-07-01
+275330,1777,David Martins,Meio-campista,Brazil,2007-09-15
+278870,1777,Daniel Lima,Meio-campista,Brazil,2007-08-15
+278872,1777,Saymon,Meio-campista,Brazil,2007-03-07
+278874,1777,Gustavo Santana,Meio-campista,Brazil,2008-03-02
+280706,1777,Kauê Junior,Meio-campista,Brazil,2009-02-27
+286371,1777,Lyan Araujo,Meio-campista,Brazil,2009-02-17
+290716,1777,Victor Oliveira,Meio-campista,Brazil,2007-02-14
+292402,1777,Ryan Nascimento,Meio-campista,Brazil,2008-09-10
+293083,1777,João Victor,Meio-campista,Brazil,2008-08-08
+1661,1777,Ademir Santos,Atacante,Brazil,1995-02-16
+28422,1777,Michel Araujo,Atacante,Uruguay,1996-09-28
+39954,1777,Everaldo,Atacante,Brazil,1991-07-05
+203316,1777,Joao Vitor,Atacante,Brazil,2006-06-15
+203411,1777,Roger Gabriel,Atacante,Brazil,2007-02-11
+203872,1777,Erick,Atacante,Brazil,2000-10-02
+262357,1777,Ruan Pablo,Atacante,Brazil,2008-07-23
+275590,1777,Dell,Atacante,Brazil,2008-06-09
+290698,1777,Caio Suassuna,Atacante,Brazil,2007-03-23
+1566,1777,Iago Borduchi,Lateral Esquerdo,Brazil,1997-03-23
+8,1777,Willian José,Centroavante,Brazil,1991-11-23
+82991,1779,Hugo Souza,Goleiro,Brazil,1999-01-31
+179167,1779,Matheus Donelli,Goleiro,Brazil,2002-05-17
+211604,1779,Kauê,Goleiro,Brazil,2004-02-08
+249314,1779,Felipexxx,Goleiro,Brazil,2005-03-05
+13710,1779,Matheuzinho,Defensor,Brazil,2000-09-08
+16342,1779,André Ramalho,Defensor,Brazil,1992-02-16
+103611,1779,Raniele,Defensor,Brazil,1996-12-31
+120089,1779,Hugo,Defensor,Brazil,1997-08-29
+137557,1779,Pedro Milans,Defensor,Uruguay,2002-03-24
+169688,1779,Bidu,Defensor,Brazil,1999-05-04
+209145,1779,Renato Santos,Defensor,Brazil,2004-10-11
+211608,1779,João Pedro,Defensor,Brazil,2003-12-31
+249171,1779,Guilherme Pellegrin,Defensor,Brazil,2006-07-26
+274858,1779,João Vitor,Defensor,Brazil,2007-01-03
+285271,1779,André Luiz,Defensor,Brazil,2006-06-20
+291989,1779,João Vitor,Defensor,Brazil,2005-03-01
+294328,1779,Iago da Silva,Defensor,Brazil,2009-02-17
+1577,1779,Charles,Meio-campista,Brazil,1996-06-19
+1609,1779,Alex Santana,Meio-campista,Bulgaria,1995-05-13
+1614,1779,Matheus Pereira,Meio-campista,Brazil,1998-02-25
+3325,1779,Jesse Lingard,Meio-campista,England,1992-12-15
+3703,1779,Zakaria Labyad,Meio-campista,Morocco,1993-03-09
+3789,1779,André Carrillo,Meio-campista,Peru,1991-06-14
+56574,1779,Allan,Meio-campista,Brazil,1997-03-03
+60058,1779,Rodrigo Garro,Meio-campista,Argentina,1998-01-04
+179054,1779,Bidon,Meio-campista,Brazil,2005-02-20
+211607,1779,Kayke,Meio-campista,Brazil,2004-04-28
+249188,1779,Yago,Meio-campista,Brazil,2006-02-05
+259933,1779,Guilherme,Meio-campista,Brazil,2007-02-06
+272780,1779,Luiz de Nardi,Meio-campista,Brazil,2007-07-13
+274859,1779,Luiz Eduardo,Meio-campista,Brazil,2007-06-26
+275105,1779,Luiz Gustavo,Meio-campista,Brazil,2006-01-02
+289853,1779,Guilherme Amorim,Meio-campista,Brazil,2008-01-15
+1325,1779,Yuri Alberto,Atacante,Brazil,2001-03-18
+8472,1779,Memphis Depay,Atacante,Netherlands,1994-02-13
+15795,1779,Vitinho,Atacante,Brazil,1993-10-09
+40134,1779,Pedro Raul,Atacante,Brazil,1996-11-05
+275104,1779,Dieguinho,Atacante,Brazil,2007-09-16
+295178,1779,Nícollas Mello,Atacante,Brazil,2008-06-13
+46376,1779,Fabrizio Angileri,Lateral Esquerdo,Argentina,1994-03-15
+33145,1779,Gabriel Paulista,Zagueiro,Brazil,1990-11-26
+1301,1779,Gustavo Henrique,Zagueiro,Brazil,1993-03-24
+192626,1779,Kaio César,Ponta Direito,Brazil,2004-02-15
+1169,1780,Daniel Fuzato,Goleiro,Brazil,1997-07-04
+179586,1780,Léo Jardim,Goleiro,Brazil,1995-03-20
+249200,1780,Phillipe Gabriel,Goleiro,Brazil,2006-02-23
+251108,1780,Pablo,Goleiro,Brazil,2003-02-11
+276218,1780,Renatinha,Goleiro,Brazil,1997-10-22
+22497,1780,Carlos Cuesta,Defensor,Colombia,1999-03-09
+28564,1780,José Rodríguez,Defensor,Uruguay,1997-03-14
+117822,1780,Lucas Piton,Defensor,Brazil,2000-10-09
+119622,1780,Lucas Freitas,Defensor,Brazil,2001-01-20
+169566,1780,Paulo Henrique,Defensor,Brazil,1996-07-25
+179017,1780,Robert,Defensor,Brazil,2003-10-11
+181575,1780,Cuiabano,Defensor,Brazil,2003-02-16
+202193,1780,Alan Saldivia,Defensor,Uruguay,2002-04-06
+276215,1780,Alison,Defensor,Brazil,2007-01-26
+276277,1780,Gabriel Soares,Defensor,Brazil,2008-06-19
+280839,1780,Breno Vereza,Defensor,Brazil,2007-09-03
+285450,1780,Bruno André,Defensor,Brazil,2007-01-02
+287686,1780,Isabela Matos,Defensor,Brazil,2002-08-12
+290612,1780,Wanyson,Defensor,Brazil,2006-02-15
+290613,1780,Gustavinho,Defensor,Brazil,2006-08-30
+294348,1780,Ramon Rique,Defensor,Brazil,2007-10-02
+1172,1780,Tchê Tchê,Meio-campista,Brazil,1992-08-30
+1251,1780,David,Meio-campista,Brazil,1995-10-17
+8402,1780,Thiago Mendes,Meio-campista,Brazil,1992-03-15
+13192,1780,Jair,Meio-campista,Brazil,1994-08-26
+46101,1780,Claudio Spinelli,Meio-campista,Argentina,1997-01-21
+103153,1780,Hugo Moura,Meio-campista,Brazil,1998-01-03
+152610,1780,Tucuruí,Meio-campista,Brazil,2002-03-18
+165615,1780,Adson,Meio-campista,Brazil,2000-10-06
+176241,1780,Matheus Franca,Meio-campista,Brazil,2004-04-01
+203328,1780,Lucas Eduardo,Meio-campista,Brazil,2004-01-13
+203341,1780,Cauan Lucas,Meio-campista,Brazil,2004-05-06
+249218,1780,João Pedro,Meio-campista,Brazil,2005-04-19
+260986,1780,Bruno Lopes,Meio-campista,Brazil,2007-07-25
+276194,1780,Wallace,Meio-campista,Brazil,2005-03-07
+276216,1780,Andrey,Meio-campista,Brazil,2008-02-05
+276248,1780,Leonardo Araujo,Meio-campista,Brazil,2007-01-31
+286832,1780,Diego Campos,Meio-campista,Brazil,2009-01-27
+291285,1780,João Vitor,Meio-campista,Brazil,2005-05-29
+291827,1780,João Vitor,Meio-campista,Brazil,2008-11-12
+294347,1780,Samuel Jesús,Meio-campista,Brazil,2006-02-14
+85890,1780,Marino Hinestroza,Atacante,Colombia,2002-07-08
+178432,1780,Carlos Gómez,Atacante,Colombia,2002-09-12
+249212,1780,Lukas Zuccarello,Atacante,Brazil,2006-12-02
+276226,1780,Riquelme Avellar,Atacante,Brazil,2006-03-08
+277757,1780,André Ricardo,Atacante,Brazil,2005-07-18
+178193,1780,Johan Rojas,Meio-campista Ofensivo,Colombia,2002-09-20
+171304,1780,Nuno Moreira,Ponta Esquerdo,Portugal,1999-06-16
+1360,1780,Brenner,Centroavante,Brazil,2000-01-16
+2478,1782,Gabriel,Goleiro,Brazil,1992-09-27
+140876,1782,Yuri Sena,Goleiro,Brazil,2001-01-03
+141366,1782,Fintelman,Goleiro,Brazil,2001-07-20
+169696,1782,Lucas Arcanjo,Goleiro,Brazil,1998-08-08
+276225,1782,Davi Barbosa,Goleiro,Brazil,2006-03-02
+290804,1782,Bernardo Augusto,Goleiro,Brazil,2008-07-22
+1602,1782,Neris,Defensor,Brazil,1992-06-17
+13421,1782,Carlos Eduardo,Defensor,Brazil,1996-10-10
+18571,1782,Camutanga,Defensor,Brazil,1993-09-27
+77470,1782,Cacá,Defensor,Brazil,1999-04-25
+95136,1782,Luan Cândido,Defensor,Brazil,2001-02-02
+101837,1782,Jamerson,Defensor,Brazil,1998-09-09
+127239,1782,Claudinho,Defensor,Brazil,2000-09-24
+165747,1782,Matheusinho,Defensor,Brazil,1998-10-07
+179845,1782,Nathan,Defensor,Brazil,2002-08-19
+204029,1782,Riquelme Carvalho,Defensor,Brazil,2005-04-25
+249142,1782,Andrei,Defensor,Brazil,2005-04-30
+276228,1782,Buiu,Defensor,Brazil,2006-02-08
+276289,1782,Kauan,Defensor,Brazil,2007-03-15
+277416,1782,Gean,Defensor,Brazil,2007-06-11
+277417,1782,Kauan Vitor,Defensor,Brazil,2006-06-15
+290706,1782,João Marques,Defensor,Brazil,2008-06-25
+290805,1782,Ivan,Defensor,Brazil,2006-06-29
+19142,1782,Ronald,Meio-campista,Brazil,1997-06-18
+21600,1782,Marinho,Meio-campista,Brazil,1990-05-29
+45802,1782,Leandro Martínez,Meio-campista,Argentina,1994-06-04
+61447,1782,Gabriel Baralhas,Meio-campista,Brazil,1998-10-10
+103300,1782,Junior Ramos,Meio-campista,Brazil,1998-03-03
+103621,1782,Caique,Meio-campista,Brazil,1995-10-10
+166758,1782,Kike Saverio,Meio-campista,Ecuador,1999-06-19
+179171,1782,Dudu,Meio-campista,Brazil,1999-06-05
+181537,1782,Zé Vitor,Meio-campista,Brazil,2000-05-02
+203646,1782,Matheuzinho,Meio-campista,Brazil,1997-10-18
+249168,1782,Edenilson,Meio-campista,Brazil,2005-06-17
+249181,1782,José Breno,Meio-campista,Brazil,2004-06-06
+249375,1782,Pablo,Meio-campista,Brazil,2003-08-03
+277418,1782,Wendell,Meio-campista,Brazil,2005-08-31
+279066,1782,Lucas Lohan,Meio-campista,Brazil,2006-07-10
+290703,1782,Gustavo Marques,Meio-campista,Brazil,2007-01-16
+290704,1782,Guilherme,Meio-campista,Brazil,2008-04-14
+290707,1782,Italo Machado,Meio-campista,Brazil,2008-02-27
+290931,1782,Cauan,Meio-campista,Brazil,2006-10-03
+290932,1782,Ezequiel,Meio-campista,Brazil,2006-07-21
+290934,1782,Alejandro Almaraz,Meio-campista,Argentina,2006-12-02
+291160,1782,Luis Aucélio,Meio-campista,Brazil,2006-05-18
+292369,1782,Nicolás Celis,Meio-campista,Colombia,2007-08-26
+293493,1782,Anderson,Meio-campista,Brazil,2002-09-28
+294048,1782,Wanderson Estrela,Meio-campista,Brazil,2008-08-07
+12716,1782,Osvaldo,Atacante,Brazil,1987-04-11
+12837,1782,Renato Kayzer,Atacante,Brazil,1996-02-17
+32156,1782,Aitor Cantalapiedra,Atacante,Spain,1996-02-10
+40441,1782,Erick,Atacante,Brazil,1997-12-10
+44093,1782,Renzo López,Atacante,Uruguay,1994-04-16
+85504,1782,Fabrício,Atacante,Brazil,2000-10-08
+243571,1782,Lucas Silva,Atacante,Brazil,1999-08-27
+247158,1782,Pedro Henrique,Atacante,Brazil,1996-11-08
+250521,1782,Diego Tarzia,Atacante,Argentina,2003-04-26
+276250,1782,Marcos Vinicius,Atacante,Brazil,2007-01-29
+276795,1782,Carlos Renê,Atacante,Brazil,2003-10-07
+277421,1782,Emanoel,Atacante,Brazil,2007-12-17
+290708,1782,Kévin Barbosa,Atacante,Brazil,2008-04-23
+294051,1782,Ruan Rebola,Atacante,Brazil,2008-02-08
+21166,1782,Riccieli,Zagueiro,Brazil,1998-09-17
+150786,1782,Rúben Ramos,Volante,Portugal,1999-03-25
+115184,1782,Ramon,Lateral Esquerdo,Brazil,2001-03-13
+11656,1783,Agustín Rossi,Goleiro,Argentina,1995-08-21
+81896,1783,Andrew,Goleiro,Brazil,2001-07-01
+203290,1783,Francisco Dyogo,Goleiro,Brazil,2004-01-09
+275020,1783,Léo Nannetti,Goleiro,Brazil,2007-08-21
+291297,1783,Pedro Henrique,Goleiro,Brazil,2008-07-18
+1074,1783,Ayrton Lucas,Defensor,Brazil,1997-06-19
+1408,1783,Leo Ortiz,Defensor,Brazil,1996-01-03
+2028,1783,Alex Sandro,Defensor,Brazil,1991-01-26
+3165,1783,Guillermo Varela,Defensor,Uruguay,1993-03-24
+7881,1783,Danilo Luiz da Silva,Defensor,Brazil,1991-07-15
+11192,1783,Léo Pereira,Defensor,Brazil,1996-01-31
+113807,1783,Vitão,Defensor,Brazil,2000-02-02
+203359,1783,Daniel Sales,Defensor,Brazil,2006-06-23
+272828,1783,João Pedro,Defensor,Brazil,2006-03-13
+275192,1783,Gusttavo,Defensor,Brazil,2006-01-10
+276943,1783,Johnny Goes,Defensor,Brazil,2007-03-27
+291289,1783,Antonio Da Silva,Defensor,Brazil,2006-02-26
+291304,1783,Daniel Carvalho,Defensor,Brazil,2009-03-31
+1244,1783,Giorgian De Arrascaeta,Meio-campista,Uruguay,1994-06-01
+1543,1783,Lucas Paquetá,Meio-campista,Brazil,1997-08-27
+1867,1783,Erick Pulgar,Meio-campista,Chile,1994-01-15
+29012,1783,Jorge Carrascal,Meio-campista,Colombia,1998-05-25
+56066,1783,Gonzalo Plata,Meio-campista,Ecuador,2000-11-01
+168795,1783,Nicolas de la Cruz,Meio-campista,Uruguay,1997-06-01
+203401,1783,Evertton,Meio-campista,Brazil,2003-02-28
+249147,1783,Yan,Meio-campista,Brazil,2005-02-08
+273193,1783,João Victor,Meio-campista,Brazil,2007-01-01
+274693,1783,Pablo Lucio,Meio-campista,Brazil,2007-04-12
+275191,1783,Lucas,Meio-campista,Brazil,2007-03-08
+275676,1783,Luiz Felipe,Meio-campista,Brazil,2008-02-08
+277520,1783,Joshua,Meio-campista,Brazil,2007-05-26
+289886,1783,Ramires,Meio-campista,Brazil,2006-03-21
+291301,1783,João Vitor,Meio-campista,Brazil,2009-03-02
+291307,1783,Kaio,Meio-campista,Brazil,2007-04-05
+291309,1783,Kaio Júnior,Meio-campista,Brazil,2007-01-22
+293240,1783,Juan Sayago,Meio-campista,Argentina,2007-08-02
+1077,1783,Pedro,Atacante,Brazil,1997-06-20
+1159,1783,Éverton,Atacante,Brazil,1996-03-22
+1317,1783,Bruno Henrique,Atacante,Brazil,1990-12-30
+8413,1783,Luiz Araújo,Atacante,Brazil,1996-06-02
+249167,1783,Guilherme,Atacante,Brazil,2006-02-02
+288502,1783,Douglas Telles,Atacante,Brazil,2007-06-01
+289791,1783,João Paulo,Atacante,Brazil,2007-04-12
+291302,1783,Alan Silva,Atacante,Brazil,2007-05-10
+291308,1783,Ryan de Oliveira,Atacante,Brazil,2008-03-05
+178710,1783,Samuel Lino,Ponta Esquerdo,Brazil,1999-12-23
+2094,1783,Jorginho,Volante,Italy,1991-12-20
+1131,1783,Emerson Royal,Lateral Direito,Brazil,1999-01-14
+118,1783,Saúl,Meio-campista Central,Spain,1994-11-21
+1561,4241,Keiller,Goleiro,Brazil,1996-10-29
+103606,4241,Gabriel Leite,Goleiro,Brazil,1987-12-28
+156724,4241,Pedro Rangel,Goleiro,Brazil,2000-06-29
+249476,4241,Joao Benassi,Goleiro,Brazil,2003-12-17
+278632,4241,Santiago,Goleiro,Brazil,2006-05-22
+1572,4241,Rodrigo Moledo,Defensor,Brazil,1987-10-27
+1706,4241,Felipe Jonatan,Defensor,Brazil,1998-02-15
+12670,4241,Tinga,Defensor,Brazil,1993-09-01
+12678,4241,Bruno Melo,Defensor,Brazil,1992-10-26
+30539,4241,Maicon,Defensor,Brazil,1988-09-14
+169549,4241,Tiago,Defensor,Brazil,2004-01-16
+249479,4241,João Pedro Chermont,Defensor,Brazil,2006-01-18
+249505,4241,Jacy Maranhão,Defensor,Brazil,1997-07-11
+290546,4241,Kauan Noveli,Defensor,Brazil,2007-04-03
+1184,4241,Thiago Santos,Meio-campista,Brazil,1989-09-05
+12781,4241,Willian Oliveira,Meio-campista,Brazil,1993-05-16
+13851,4241,Fernando Sobral,Meio-campista,Brazil,1994-12-17
+22162,4241,Sebastián Gómez,Meio-campista,Colombia,1996-06-03
+31609,4241,Josué,Meio-campista,Portugal,1990-09-17
+118233,4241,Wallisson Luiz,Meio-campista,Brazil,1997-09-23
+203383,4241,Lucas Ronier,Meio-campista,Brazil,2004-11-26
+213299,4241,Pedro Lucas,Meio-campista,Brazil,2004-01-10
+249517,4241,Matheus Dalsasso,Meio-campista,Brazil,2007-08-09
+278569,4241,Martinelli,Meio-campista,Brazil,2008-04-22
+278577,4241,Lucas Taverna,Meio-campista,Brazil,2007-05-08
+278595,4241,Vitor Gonçalves,Meio-campista,Brazil,2007-04-22
+278656,4241,Khensane,Meio-campista,Brazil,2009-01-30
+278679,4241,Paulo Roberto,Meio-campista,Brazil,2005-05-20
+290544,4241,Gustavo Oliveira,Meio-campista,Brazil,2002-09-11
+290615,4241,Miguel Kayk,Meio-campista,Brazil,2007-09-01
+292370,4241,Alejandro Ararat,Meio-campista,Colombia,2006-07-21
+1193,4241,Keno,Atacante,Brazil,1989-09-10
+16154,4241,Pedro Rocha,Atacante,Brazil,1994-10-01
+19958,4241,Rodrigo Rodrigues,Atacante,Brazil,1996-06-18
+129391,4241,Fabinho,Atacante,Brazil,1999-11-18
+169022,4241,Breno Lopes,Atacante,Brazil,1996-01-24
+179086,4241,Renato Marques,Atacante,Brazil,2003-12-09
+181513,4241,Vini Paulista,Atacante,Brazil,2001-03-22
+203388,4241,Éberth,Atacante,Brazil,2003-06-19
+249431,4241,Thiago Azaf,Atacante,Brazil,2007-01-14
+259981,4241,Joaquín Lavega,Atacante,Uruguay,2005-02-03
+276213,4241,Enzo Vagner,Atacante,Brazil,2006-07-28
+276301,4241,João Vitor,Atacante,Brazil,2006-01-16
+278579,4241,Richard,Atacante,Brazil,2007-02-13
+278659,4241,Daniel Gruber,Atacante,Brazil,2007-01-31
+290543,4241,Lucas Crepaldi,Atacante,Brazil,2007-06-18
+294294,4241,David Alves,Atacante,Brazil,2008-02-04
+1098,4286,Cleiton,Goleiro,Brazil,1997-08-19
+39920,4286,Tiago Volpi,Goleiro,Brazil,1990-12-19
+111297,4286,Fabrício,Goleiro,Brazil,2000-06-15
+261517,4286,Gustavo Reis,Goleiro,Brazil,2005-06-10
+277392,4286,Fernando Henrique,Goleiro,Brazil,2004-02-01
+1435,4286,Pedro Henrique,Defensor,Brazil,1995-10-02
+1439,4286,Juninho Capixaba,Defensor,Brazil,1997-07-06
+28510,4286,Ariel Sant'Anna,Defensor,Uruguay,1997-09-27
+43624,4286,Eduardo Santos,Defensor,Brazil,1997-11-28
+131279,4286,José Hurtado,Defensor,Ecuador,2001-12-23
+131880,4286,Guzmán Rodríguez,Defensor,Uruguay,2000-02-08
+154767,4286,Vanderlan,Defensor,Brazil,2002-09-07
+169578,4286,Vinicius,Defensor,Brazil,1999-11-06
+179007,4286,Gustavo Marques,Defensor,Brazil,2001-10-09
+280897,4286,Cauê,Defensor,Brazil,2006-12-13
+292153,4286,Ryan,Defensor,Brazil,2007-09-04
+292187,4286,Weimar Vivas,Defensor,Colombia,2006-10-17
+295121,4286,Breno de Moraes,Defensor,Brazil,2008-06-25
+1214,4286,Matheus Fernandes,Meio-campista,Brazil,1998-06-30
+1445,4286,Gabriel,Meio-campista,Brazil,1992-07-10
+82776,4286,Eric Ramires,Meio-campista,Brazil,2000-08-10
+142936,4286,Bruno Praxedes,Meio-campista,Brazil,2002-02-08
+166367,4286,Ignacio Sosa,Meio-campista,Uruguay,2003-08-31
+169236,4286,Lucas Barbosa,Meio-campista,Brazil,2001-02-22
+179156,4286,Fabinho,Meio-campista,Brazil,2002-04-09
+183235,4286,Rodrigo Huendra,Meio-campista,Brazil,2004-03-16
+191378,4286,José Herrera,Meio-campista,Argentina,2003-04-16
+192621,4286,Gustavinho,Meio-campista,Brazil,2004-04-23
+249311,4286,Yuri Silva,Meio-campista,Brazil,2007-04-14
+249333,4286,Gabriel Lopes,Meio-campista,Brazil,2006-07-12
+249335,4286,Rafael da Silva,Meio-campista,Brazil,2006-03-16
+278665,4286,Yuri Alves,Meio-campista,Brazil,2006-09-06
+294346,4286,Jhuan Nunes,Meio-campista,Brazil,2007-06-03
+1326,4286,Eduardo Sasha,Atacante,Brazil,1992-02-24
+11198,4286,Fernando,Atacante,Brazil,1999-03-01
+114353,4286,Isidro Pitta,Atacante,Paraguay,1999-08-14
+144471,4286,João Neto,Atacante,Brazil,2003-05-21
+178206,4286,Henry Mosquera,Atacante,Colombia,2001-11-15
+178898,4286,Bruno,Atacante,Brazil,2003-03-14
+213293,4286,Marcelinho Braz,Atacante,Brazil,2004-08-16
+249331,4286,Filipe,Atacante,Brazil,2006-02-13
+250437,4286,Vinicius Mendonça,Atacante,Brazil,2004-02-20
+280896,4286,Davi Gomes,Atacante,Brazil,2005-06-06
+12602,4287,Ivan,Goleiro,Brazil,1997-07-02
+13394,4287,Marcelo Rangel,Goleiro,Brazil,1988-05-17
+73445,4287,Ygor,Goleiro,Brazil,1994-04-15
+278572,4287,João Victor,Goleiro,Brazil,2005-08-05
+278605,4287,Marcos Alexandre,Goleiro,Brazil,2006-11-25
+1441,4287,Marllon,Defensor,Brazil,1992-04-16
+1465,4287,Yago Pikachu,Defensor,Brazil,1992-06-05
+13899,4287,Léo Andrade,Defensor,Brazil,1998-04-18
+19262,4287,Mayk,Defensor,Brazil,1999-08-31
+83595,4287,Matheus Alexandre,Defensor,Brazil,1999-04-07
+119621,4287,João Lucas,Defensor,Brazil,1998-03-09
+169632,4287,Thalisson,Defensor,Brazil,2002-01-20
+178754,4287,Cristian Tassano,Defensor,Uruguay,1996-07-23
+180287,4287,Braian Cufré,Defensor,Argentina,1996-12-15
+203721,4287,Marcelinho,Defensor,Brazil,1998-07-20
+294995,4287,Kauan Garcia,Defensor,Brazil,2007-04-07
+1582,4287,Patrick,Meio-campista,Brazil,1992-07-29
+3738,4287,Víctor Cantillo,Meio-campista,Colombia,1991-10-15
+11194,4287,Gabriel Taliari,Meio-campista,Brazil,1997-04-13
+15992,4287,Panagiotis Tachtsidis,Meio-campista,Greece,1991-02-15
+73778,4287,Zé Ricardo,Meio-campista,Brazil,1999-02-03
+113224,4287,Leonel Picco,Meio-campista,Argentina,1999-10-22
+139932,4287,Patrick de Paula,Meio-campista,Brazil,1999-09-08
+147477,4287,Diego Hernández,Meio-campista,Uruguay,2000-06-22
+154674,4287,Franco Catarozzi,Meio-campista,Uruguay,2000-04-02
+168807,4287,Vitor Bueno,Meio-campista,Brazil,1994-09-05
+168986,4287,Jose Welison,Meio-campista,Brazil,1995-03-11
+181588,4287,Giovanni Fernando,Meio-campista,Brazil,1996-11-22
+203325,4287,Freitas,Meio-campista,Brazil,2003-03-04
+278702,4287,Adson,Meio-campista,Brazil,2005-02-04
+292474,4287,Miguel Pereira,Meio-campista,Brazil,2006-02-05
+292476,4287,Rafael,Meio-campista,Brazil,2006-03-11
+12960,4287,Carlinhos,Atacante,Brazil,1997-02-12
+37366,4287,João Pedro,Atacante,Portugal,1996-11-13
+56082,4287,Gabriel Poveda,Atacante,Brazil,1998-07-07
+90803,4287,Alef Manga,Atacante,Brazil,1994-11-29
+113521,4287,Jáderson,Atacante,Brazil,2000-08-12
+141427,4287,Eduardo Melo,Atacante,Brazil,2001-05-13
+169720,4287,Jája Silva,Atacante,Brazil,1998-11-12
+203696,4287,David Braga,Atacante,Brazil,2001-12-11
+278662,4287,Tico,Atacante,Brazil,2006-09-21
+291067,4287,Rafael Monti,Atacante,Argentina,1999-12-08
+292209,4287,Filipe,Atacante,Brazil,2007-11-12
+294115,4287,Andrés Moreno,Atacante,Colombia,2006-06-29
+294997,4287,Kerlon Cruz,Atacante,Brazil,2006-04-20
+8781,4287,Duplexe Tchamba,Zagueiro,Cameroon,1998-07-10
+203323,4287,Kayki,Zagueiro,Brazil,2005-05-01
+1432,4364,Walter,Goleiro,Brazil,1987-11-18
+18166,4364,Georgemy,Goleiro,Brazil,1995-08-15
+44810,4364,Alex Muralha,Goleiro,Brazil,1989-11-10
+203727,4364,Lacerda,Goleiro,Brazil,2005-02-13
+291157,4364,Thomazella,Goleiro,Brazil,1990-08-15
+1181,4364,Victor Luis,Defensor,Brazil,1993-06-23
+1340,4364,Reinaldo,Defensor,Brazil,1989-09-28
+12931,4364,Daniel Borges,Defensor,Brazil,1993-03-23
+13516,4364,Willian Machado,Defensor,Brazil,1996-11-13
+18206,4364,Rodrigues,Defensor,Brazil,1997-10-10
+103442,4364,João Victor,Defensor,Brazil,1997-09-02
+181603,4364,Igor Formiga,Defensor,Brazil,1999-01-08
+220659,4364,Luiz Fernando,Defensor,Brazil,2008-02-07
+292400,4364,Marcelo Barbosa,Defensor,Brazil,2008-07-26
+272,4364,Gabriel,Meio-campista,Brazil,1993-09-18
+1348,4364,Shaylon,Meio-campista,Brazil,1997-04-27
+13355,4364,Yuri,Meio-campista,Brazil,1994-04-20
+18894,4364,Everton,Meio-campista,Brazil,1997-03-17
+23363,4364,Lucas Mugni,Meio-campista,Argentina,1992-01-12
+95982,4364,Alesson,Meio-campista,Brazil,1999-02-16
+103163,4364,Chico,Meio-campista,Brazil,1991-05-16
+103448,4364,Edson Carioca,Meio-campista,Brazil,1998-06-04
+121909,4364,José Aldo,Meio-campista,Brazil,1998-07-25
+179829,4364,Denilson Alves,Meio-campista,Brazil,2001-03-23
+183580,4364,Carlos Eduardo,Meio-campista,Brazil,1989-10-17
+292401,4364,Vinicius Bacchi,Meio-campista,Brazil,2007-07-12
+294117,4364,Giovanni Pacheco,Meio-campista,Brazil,2006-07-19
+1426,4364,Neto Moura,Atacante,Brazil,1996-08-06
+1617,4364,Igor Cariús,Atacante,Brazil,1993-05-01
+13116,4364,André Luis,Atacante,Brazil,1994-03-09
+13939,4364,Nathan,Atacante,Brazil,1999-06-09
+15914,4364,Tiquinho Soares,Atacante,Brazil,1991-01-17
+18732,4364,Negueba,Atacante,Brazil,1999-12-03
+179043,4364,Antonio Galeano,Atacante,Paraguay,2000-03-22
+179144,4364,Carlos Eduardo,Atacante,Brazil,1996-10-10
+294118,4364,Glaucon,Atacante,Brazil,2006-04-02
+12818,4364,Lucas Oliveira,Zagueiro,Brazil,1996-02-02
+30386,6684,Sergio Rochet,Goleiro,Uruguay,1993-03-23
+169581,6684,Anthoni,Goleiro,Brazil,2002-01-23
+249146,6684,Diego Esser,Goleiro,Brazil,2005-04-13
+261272,6684,Kauan,Goleiro,Brazil,2003-04-27
+58,6684,Gabriel Mercado,Defensor,Argentina,1987-03-18
+24740,6684,Félix Torres,Defensor,Ecuador,1997-01-11
+133258,6684,Alexandro Bernabei,Defensor,Argentina,2000-09-24
+140872,6684,Matheus Bahia,Defensor,Brazil,1999-08-11
+153573,6684,Braian Aguirre,Defensor,Argentina,2000-07-28
+165600,6684,Victor Gabriel,Defensor,Brazil,2004-04-28
+179795,6684,Luis Felipy,Defensor,Brazil,2006-03-12
+192652,6684,Paulinho,Defensor,Brazil,2005-05-23
+205533,6684,Juninho,Defensor,Brazil,1995-02-01
+243622,6684,Clayton,Defensor,Brazil,2000-04-04
+276204,6684,Pedro Kauã,Defensor,Brazil,2006-03-29
+276212,6684,Pablo Pereira,Defensor,Brazil,2006-07-01
+287829,6684,Alisson Rodrigues,Defensor,Brazil,2008-07-31
+290697,6684,Kauan,Defensor,Brazil,2006-11-20
+290699,6684,Lazaro,Defensor,Brazil,2007-09-08
+290702,6684,Carlos Eduardo,Defensor,Brazil,2006-02-27
+292152,6684,Denis Marfo,Defensor,Ghana,2006-01-28
+295297,6684,Luiz Felipe,Defensor,Brazil,2006-05-19
+1189,6684,Bruno Henrique,Meio-campista,Brazil,1989-10-21
+1550,6684,Ronaldo,Meio-campista,Brazil,1996-10-23
+8404,6684,Thiago Maia,Meio-campista,Brazil,1997-03-23
+16481,6684,Alan Patrick,Meio-campista,Brazil,1991-05-13
+113611,6684,Rodrigo Villagra,Meio-campista,Argentina,2001-02-14
+114877,6684,Alan Rodríguez,Meio-campista,Uruguay,2000-01-25
+129367,6684,Bruno Gomes,Meio-campista,Brazil,2001-04-04
+168882,6684,Kayky,Meio-campista,Brazil,2003-06-11
+261682,6684,Yago Noal,Meio-campista,Brazil,2007-02-05
+276202,6684,Bernardo Jacob,Meio-campista,Brazil,2006-02-28
+278143,6684,Raykkonen,Meio-campista,Brazil,2008-07-13
+285156,6684,Allex,Meio-campista,Brazil,2006-05-04
+290705,6684,João Kempes,Meio-campista,Brazil,2009-04-25
+1091,6684,Richard,Atacante,Brazil,1994-02-18
+1129,6684,Alerrandro,Atacante,Brazil,2000-01-12
+22061,6684,Johan Carbonero,Atacante,Colombia,1999-07-20
+45372,6684,Tabata,Atacante,Brazil,1997-03-30
+169553,6684,Vitinho,Atacante,Brazil,1999-04-01
+276495,6684,João Victor,Atacante,Brazil,2007-07-27
+287950,6684,Benjamin Arhin,Atacante,Ghana,2006-05-29
+290700,6684,João Pedro,Atacante,Brazil,2009-06-29
+11680,6684,Rafael Borré,Centroavante,Colombia,1995-09-15
+297546,6684,Zechmeister,Não Informado,Brazil,2009-09-28
+99380,6685,Gabriel Brazão,Goleiro,Brazil,2000-10-05
+170456,6685,Diogenes,Goleiro,Brazil,2001-01-06
+249475,6685,Rodrigo,Goleiro,Brazil,2005-03-23
+251329,6685,João Pedro,Goleiro,Brazil,2008-03-18
+1086,6685,Luan Peres,Defensor,Brazil,1994-07-19
+1174,6685,Mayke,Defensor,Brazil,1992-11-10
+1304,6685,Lucas Veríssimo,Defensor,Brazil,1995-07-02
+12616,6685,Igor Vinícius,Defensor,Brazil,1997-04-01
+45834,6685,Gonzalo Escobar,Defensor,Argentina,1997-03-16
+169556,6685,Zé Ivaldo,Defensor,Brazil,1997-02-21
+276230,6685,Vinícius Lira,Defensor,Brazil,2007-10-12
+278747,6685,João Alencar,Defensor,Brazil,2007-06-25
+282990,6685,Joāo Paulo,Defensor,Brazil,2007-02-12
+293967,6685,Rafael Gonzaga,Defensor,Brazil,2008-02-07
+295093,6685,Samuel Mendes,Defensor,Brazil,2008-01-30
+1156,6685,Thaciano,Meio-campista,Brazil,1995-05-12
+1380,6685,Zé Rafael,Meio-campista,Brazil,1993-06-16
+1540,6685,Willian Arão,Meio-campista,Brazil,1992-03-12
+1849,6685,João Schmidt,Meio-campista,Brazil,1993-05-19
+2295,6685,Tomás Rincón,Meio-campista,Venezuela,1988-01-13
+28708,6685,Christian Oliva,Meio-campista,Uruguay,1996-06-01
+83705,6685,Álvaro Barreal,Meio-campista,Argentina,2000-08-17
+139933,6685,Gabriel Menino,Meio-campista,Brazil,2000-09-29
+192844,6685,Lautaro Diaz,Meio-campista,Argentina,1998-05-21
+203419,6685,Miguelito,Meio-campista,Bolivia,2004-04-25
+260876,6685,Mateus Caucaia,Meio-campista,Brazil,2007-06-29
+276239,6685,Gabriel Bontempo,Meio-campista,Brazil,2005-01-16
+276265,6685,Gustavo Henrique,Meio-campista,Brazil,2005-04-07
+280705,6685,Robson Júnior,Meio-campista,Brazil,2007-12-17
+281165,6685,Vidinho,Meio-campista,Brazil,2005-09-03
+290718,6685,Pedro Paulo,Meio-campista,Brazil,2007-02-12
+290933,6685,Pedro Assis,Meio-campista,Brazil,2007-02-19
+291303,6685,Enzo,Meio-campista,Brazil,2005-01-06
+295520,6685,Anthony Carlos Nunes Reis,Meio-campista,Brazil,2016-01-24
+1226,6685,Rony,Atacante,Brazil,1995-05-11
+1327,6685,Gabriel Barbosa,Atacante,Brazil,1996-08-30
+8491,6685,Neymar,Atacante,Brazil,1992-02-05
+43705,6685,Alexandre Guedes,Atacante,Brazil,1994-02-11
+115959,6685,Moises,Atacante,Brazil,1996-09-02
+249491,6685,João Victor,Atacante,Brazil,2007-08-12
+291758,6685,Fernando Pradella,Atacante,Brazil,2008-07-03
+292398,6685,Nadson Maia,Atacante,Brazil,2009-01-24
+122016,6685,Benjamín Rollheiser,Ponta Direito,Argentina,2000-03-24
+72714,6685,Adonis Frías,Zagueiro,Argentina,1998-03-17
