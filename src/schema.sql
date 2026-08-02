@@ -1,13 +1,3 @@
--- Limpa tabelas antigas
-DROP TABLE IF EXISTS artilheiros CASCADE;
-DROP TABLE IF EXISTS tabela_partidas_tratada CASCADE;
-DROP TABLE IF EXISTS jogadores CASCADE;
-DROP TABLE IF EXISTS tecnicos CASCADE;
-DROP TABLE IF EXISTS arbitros CASCADE;
-DROP TABLE IF EXISTS temporadas CASCADE;
-DROP TABLE IF EXISTS competicoes CASCADE;
-DROP TABLE IF EXISTS times CASCADE;
-
 -- 1. Competicoes
 CREATE TABLE IF NOT EXISTS competicoes (
     id_competicao INT PRIMARY KEY,
@@ -79,9 +69,9 @@ CREATE TABLE IF NOT EXISTS tabela_partidas_tratada (
     status VARCHAR(20),
     rodada INT,
     resultado VARCHAR(20),
-    placar_casa_intervalo INT,  -- <--- ADICIONADA
+    placar_casa_intervalo INT,
     placar_casa_final INT,
-    placar_fora_intervalo INT,  -- <--- ADICIONADA
+    placar_fora_intervalo INT,
     placar_fora_final INT,
     FOREIGN KEY (id_competicao) REFERENCES competicoes(id_competicao),
     FOREIGN KEY (id_temporada) REFERENCES temporadas(id_temporada),
